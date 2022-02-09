@@ -1,0 +1,58 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Jun  3 08:46:58 2021
+| Host         : DESKTOP-500EMUB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu2eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'arm_tb_bd_rst_ps8_0_99M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of arm_tb_bd_rst_ps8_0_99M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Jun  3 08:46:58 2021
+| Host         : DESKTOP-500EMUB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu2eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'arm_tb_bd_ps8_0_axi_periph_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of arm_tb_bd_ps8_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Jun  3 08:46:58 2021
+| Host         : DESKTOP-500EMUB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu2eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'arm_tb_bd_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of arm_tb_bd_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0 (Rev. 23)) to Vivado generation flows.
+

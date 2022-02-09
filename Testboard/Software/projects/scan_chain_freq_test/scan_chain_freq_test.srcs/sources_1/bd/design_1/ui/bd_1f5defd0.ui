@@ -1,0 +1,102 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.623256",
+   "Default View_TopLeft":"-536,0",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port GPIO3_pad -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port TEST_EN_pad -pg 1 -lvl 2 -x 830 -y 470 -defaultsOSRD
+preplace port CC_SPYPAD_1_pad -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port CC_SPYPAD_0_pad -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port CC_SPYPAD_2_pad -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port CCFF_HEAD_pad -pg 1 -lvl 2 -x 830 -y 370 -defaultsOSRD
+preplace port CCFF_TAIL_pad -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port CLK_pad -pg 1 -lvl 2 -x 830 -y 410 -defaultsOSRD
+preplace port COUT_SPYPAD_0_pad -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port GPIO0_pad -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port GPIO1_pad -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace port GPIO2_pad -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port GPIO6_pad -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port GPIO7_pad -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
+preplace port LUT4_OUT_0_pad -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port LUT6_OUT_0_pad -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port GPIO23_pad -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port GPIO22_pad -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port GPIO19_pad -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port GPIO18_pad -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port GPIO17_pad -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port GPIO16_pad -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port GPIO13_pad -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port GPIO11_pad -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port GPIO10_pad -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace port GPIO9_pad -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port GPIO8_pad -pg 1 -lvl 0 -x 0 -y 640 -defaultsOSRD
+preplace port GPIO20_pad -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port SC_TAIL_pad -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port GPIO12_pad -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
+preplace port t3_pad -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace port PRESET_pad -pg 1 -lvl 2 -x 830 -y 490 -defaultsOSRD
+preplace port SC_HEAD_pad -pg 1 -lvl 2 -x 830 -y 450 -defaultsOSRD
+preplace port RESET_pad -pg 1 -lvl 2 -x 830 -y 390 -defaultsOSRD
+preplace port PROG_CLK_pad -pg 1 -lvl 2 -x 830 -y 510 -defaultsOSRD
+preplace port t0_pad -pg 1 -lvl 2 -x 830 -y 530 -defaultsOSRD
+preplace port t1_pad -pg 1 -lvl 2 -x 830 -y 550 -defaultsOSRD
+preplace port t2_pad -pg 1 -lvl 2 -x 830 -y 570 -defaultsOSRD
+preplace port t0_is_output -pg 1 -lvl 2 -x 830 -y 590 -defaultsOSRD
+preplace port t1_is_output -pg 1 -lvl 2 -x 830 -y 610 -defaultsOSRD
+preplace port t2_is_output -pg 1 -lvl 2 -x 830 -y 630 -defaultsOSRD
+preplace port t3_is_output -pg 1 -lvl 2 -x 830 -y 650 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 500 -y 90 -defaultsOSRD
+preplace inst scan_chain_freq_test_0 -pg 1 -lvl 1 -x 500 -y 520 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 2 200 180 800
+preplace netloc GPIO3_pad_1 1 0 1 70 260n
+preplace netloc scan_chain_freq_test_0_TEST_EN_pad 1 1 1 810 430n
+preplace netloc CC_SPYPAD_1_pad_1 1 0 1 N 300
+preplace netloc CC_SPYPAD_0_pad_1 1 0 1 90 360n
+preplace netloc CC_SPYPAD_2_pad_1 1 0 1 50 380n
+preplace netloc scan_chain_freq_test_0_CCFF_HEAD_pad 1 1 1 800 370n
+preplace netloc CCFF_TAIL_pad_1 1 0 1 N 400
+preplace netloc scan_chain_freq_test_0_CLK_pad 1 1 1 N 410
+preplace netloc COUT_SPYPAD_0_pad_1 1 0 1 60 440n
+preplace netloc GPIO0_pad_1 1 0 1 110 280n
+preplace netloc GPIO1_pad_1 1 0 1 40 340n
+preplace netloc GPIO2_pad_1 1 0 1 120 320n
+preplace netloc GPIO6_pad_1 1 0 1 N 600
+preplace netloc GPIO7_pad_1 1 0 1 N 620
+preplace netloc LUT4_OUT_0_pad_1 1 0 1 60 260n
+preplace netloc LUT6_OUT_0_pad_1 1 0 1 100 280n
+preplace netloc GPIO23_pad_1 1 0 1 190 180n
+preplace netloc GPIO22_pad_1 1 0 1 180 200n
+preplace netloc GPIO19_pad_1 1 0 1 170 220n
+preplace netloc GPIO18_pad_1 1 0 1 160 240n
+preplace netloc GPIO17_pad_1 1 0 1 80 320n
+preplace netloc GPIO16_pad_1 1 0 1 30 340n
+preplace netloc GPIO13_pad_1 1 0 1 20 520n
+preplace netloc GPIO11_pad_1 1 0 1 130 440n
+preplace netloc GPIO10_pad_1 1 0 1 140 500n
+preplace netloc GPIO9_pad_1 1 0 1 150 540n
+preplace netloc GPIO8_pad_1 1 0 1 70 520n
+preplace netloc GPIO20_pad_1 1 0 1 N 480
+preplace netloc SC_TAIL_pad_1 1 0 1 N 680
+preplace netloc GPIO12_pad_1 1 0 1 N 720
+preplace netloc t3_pad_1 1 0 1 N 800
+preplace netloc scan_chain_freq_test_0_PRESET_pad 1 1 1 N 490
+preplace netloc scan_chain_freq_test_0_SC_HEAD_pad 1 1 1 N 450
+preplace netloc scan_chain_freq_test_0_RESET_pad 1 1 1 N 390
+preplace netloc scan_chain_freq_test_0_PROG_CLK_pad 1 1 1 N 510
+preplace netloc scan_chain_freq_test_0_t0_pad 1 1 1 N 530
+preplace netloc scan_chain_freq_test_0_t1_pad 1 1 1 N 550
+preplace netloc scan_chain_freq_test_0_t2_pad 1 1 1 N 570
+preplace netloc scan_chain_freq_test_0_t0_is_output 1 1 1 N 590
+preplace netloc scan_chain_freq_test_0_t1_is_output 1 1 1 N 610
+preplace netloc scan_chain_freq_test_0_t2_is_output 1 1 1 N 630
+preplace netloc scan_chain_freq_test_0_t3_is_output 1 1 1 N 650
+levelinfo -pg 1 0 500 830
+pagesize -pg 1 -db -bbox -sgen -210 0 1000 860
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

@@ -1,0 +1,82 @@
+timestamp=[2021-05-20 13:51:15], mode=WORKBENCH_START, duration=0:00:03.794, duration_ms=3794, data={}
+timestamp=[2021-05-20 13:51:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.404, duration_ms=404, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-05-20 13:51:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.158, duration_ms=2158, data={}
+timestamp=[2021-05-20 13:52:10], mode=APP_CREATION, duration=0:00:17.769, duration_ms=17769, data={name=arm, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=testbench_bd_wrapper, application_type=application}
+timestamp=[2021-05-20 13:53:12], mode=PLATFORM_GENERATION, duration=0:00:26.712, duration_ms=26712, data={name=testbench_bd_wrapper}
+timestamp=[2021-05-20 13:53:13], mode=BUILD, duration=0:00:00.776, duration_ms=776, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 13:57:33], mode=BUILD, duration=0:00:00.561, duration_ms=561, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:05:09], mode=BUILD, duration=0:00:00.686, duration_ms=686, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:05:50], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=arm, configuration=Debug, clean_build=true}
+timestamp=[2021-05-20 15:05:51], mode=BUILD, duration=0:00:00.625, duration_ms=625, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:06:04], mode=BUILD, duration=0:00:00.549, duration_ms=549, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:07:14], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:08:36], mode=BUILD, duration=0:00:00.553, duration_ms=553, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:13:49], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:17:20], mode=WORKBENCH_START, duration=0:00:07.358, duration_ms=7358, data={}
+timestamp=[2021-05-20 15:17:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.028, duration_ms=28, data={}
+timestamp=[2021-05-20 15:17:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.638, duration_ms=638, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-05-20 15:17:39], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:17:45], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:24:58], mode=BUILD, duration=0:00:00.562, duration_ms=562, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:32:25], mode=BUILD, duration=0:00:00.548, duration_ms=548, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:35:17], mode=BUILD, duration=0:00:00.558, duration_ms=558, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 15:38:14], mode=BUILD, duration=0:00:00.554, duration_ms=554, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 16:19:18], mode=BUILD, duration=0:00:00.554, duration_ms=554, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-05-20 16:21:29], mode=PLATFORM_GENERATION, duration=0:00:01.525, duration_ms=1525, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-01 14:06:14], mode=WORKBENCH_START, duration=0:00:39.319, duration_ms=39319, data={}
+timestamp=[2021-06-01 14:06:16], mode=WORKBENCH_UI_INIT, duration=0:00:01.479, duration_ms=1479, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-06-01 14:06:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.073, duration_ms=73, data={}
+timestamp=[2021-06-01 14:07:23], mode=PLATFORM_GENERATION, duration=0:00:37.668, duration_ms=37668, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-01 14:07:28], mode=BUILD, duration=0:00:01.745, duration_ms=1745, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 14:12:29], mode=WORKBENCH_START, duration=0:00:12.531, duration_ms=12531, data={}
+timestamp=[2021-06-01 14:12:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.866, duration_ms=866, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-06-01 14:12:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.042, duration_ms=42, data={}
+timestamp=[2021-06-01 14:15:59], mode=PLATFORM_GENERATION, duration=0:00:02.605, duration_ms=2605, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-01 14:16:02], mode=BUILD, duration=0:00:00.340, duration_ms=340, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 14:16:05], mode=BUILD, duration=0:00:02.303, duration_ms=2303, data={name=arm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 14:28:47], mode=PLATFORM_GENERATION, duration=0:00:07.651, duration_ms=7651, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-01 14:36:12], mode=WORKBENCH_START, duration=0:00:32.492, duration_ms=32492, data={}
+timestamp=[2021-06-01 14:36:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.836, duration_ms=836, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-06-01 14:36:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.029, duration_ms=29, data={}
+timestamp=[2021-06-01 14:37:39], mode=BUILD, duration=0:00:00.521, duration_ms=521, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 14:38:23], mode=BUILD, duration=0:00:01.740, duration_ms=1740, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 14:58:42], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 14:58:48], mode=BUILD, duration=0:00:00.816, duration_ms=816, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:00:13], mode=BUILD, duration=0:00:00.715, duration_ms=715, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:34:38], mode=WORKBENCH_START, duration=0:00:12.136, duration_ms=12136, data={}
+timestamp=[2021-06-01 15:34:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.123, duration_ms=1123, data={editors_count=5, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-06-01 15:34:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.053, duration_ms=53, data={}
+timestamp=[2021-06-01 15:35:40], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:36:01], mode=BUILD, duration=0:00:00.502, duration_ms=502, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:36:10], mode=BUILD, duration=0:00:00.951, duration_ms=951, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:38:28], mode=BUILD, duration=0:00:00.767, duration_ms=767, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:41:34], mode=BUILD, duration=0:00:00.804, duration_ms=804, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:46:00], mode=BUILD, duration=0:00:00.774, duration_ms=774, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:48:59], mode=BUILD, duration=0:00:00.822, duration_ms=822, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:49:17], mode=BUILD, duration=0:00:00.719, duration_ms=719, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 15:52:25], mode=BUILD, duration=0:00:00.712, duration_ms=712, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-01 16:17:50], mode=BUILD, duration=0:00:00.747, duration_ms=747, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:24:31], mode=WORKBENCH_START, duration=0:00:15.182, duration_ms=15182, data={}
+timestamp=[2021-06-02 10:24:32], mode=WORKBENCH_UI_INIT, duration=0:00:01.050, duration_ms=1050, data={editors_count=6, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-06-02 10:24:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.103, duration_ms=103, data={}
+timestamp=[2021-06-02 10:25:19], mode=BUILD, duration=0:00:01.050, duration_ms=1050, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:36:17], mode=BUILD, duration=0:00:01.053, duration_ms=1053, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:39:56], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=arm, configuration=Debug, clean_build=true}
+timestamp=[2021-06-02 10:39:56], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=arm_system, configuration=Debug, clean_build=true}
+timestamp=[2021-06-02 10:40:07], mode=PLATFORM_GENERATION, duration=0:00:10.753, duration_ms=10753, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-02 10:41:21], mode=PLATFORM_GENERATION, duration=0:00:47.002, duration_ms=47002, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-02 10:41:25], mode=BUILD, duration=0:00:01.297, duration_ms=1297, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:41:36], mode=BUILD, duration=0:00:02.279, duration_ms=2279, data={name=arm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:42:18], mode=PLATFORM_GENERATION, duration=0:00:02.527, duration_ms=2527, data={name=testbench_bd_wrapper}
+timestamp=[2021-06-02 10:44:55], mode=WORKBENCH_START, duration=0:00:12.035, duration_ms=12035, data={}
+timestamp=[2021-06-02 10:44:56], mode=WORKBENCH_UI_INIT, duration=0:00:00.924, duration_ms=924, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arm,arm_system,testbench_bd_wrapper}
+timestamp=[2021-06-02 10:44:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.044, duration_ms=44, data={}
+timestamp=[2021-06-02 10:45:17], mode=BUILD, duration=0:00:00.404, duration_ms=404, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:47:10], mode=BUILD, duration=0:00:00.853, duration_ms=853, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:50:02], mode=BUILD, duration=0:00:00.853, duration_ms=853, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:52:18], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:53:53], mode=BUILD, duration=0:00:00.771, duration_ms=771, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:56:49], mode=BUILD, duration=0:00:00.747, duration_ms=747, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 10:58:16], mode=BUILD, duration=0:00:00.716, duration_ms=716, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 11:26:57], mode=BUILD, duration=0:00:00.824, duration_ms=824, data={name=arm, configuration=Debug, clean_build=false}
+timestamp=[2021-06-02 11:39:56], mode=BUILD, duration=0:00:00.770, duration_ms=770, data={name=arm, configuration=Debug, clean_build=false}

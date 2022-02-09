@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../src/design/clock_divider.v" \
+"../../../../../../src/design/pulse_generator.v" \
+"../../../../../../src/design/reset_generator.v" \
+"../../../../../../src/design/scan_chain_freq_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

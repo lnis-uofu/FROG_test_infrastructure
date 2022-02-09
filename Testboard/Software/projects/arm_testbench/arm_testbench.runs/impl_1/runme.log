@@ -1,0 +1,962 @@
+
+*** Running vivado
+    with args -log arm_tb_bd_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source arm_tb_bd_wrapper.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source arm_tb_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1054.598 ; gain = 0.000
+Command: link_design -top arm_tb_bd_wrapper -part xczu2eg-sfvc784-1-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu2eg-sfvc784-1-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_axi_gpio_0_1/arm_tb_bd_axi_gpio_0_1.dcp' for cell 'arm_tb_bd_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_rst_ps8_0_99M_0/arm_tb_bd_rst_ps8_0_99M_0.dcp' for cell 'arm_tb_bd_i/rst_ps8_0_99M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_zynq_ultra_ps_e_0_5/arm_tb_bd_zynq_ultra_ps_e_0_5.dcp' for cell 'arm_tb_bd_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_auto_pc_0/arm_tb_bd_auto_pc_0.dcp' for cell 'arm_tb_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1455.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_axi_gpio_0_1/arm_tb_bd_axi_gpio_0_1_board.xdc] for cell 'arm_tb_bd_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_axi_gpio_0_1/arm_tb_bd_axi_gpio_0_1_board.xdc] for cell 'arm_tb_bd_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_axi_gpio_0_1/arm_tb_bd_axi_gpio_0_1.xdc] for cell 'arm_tb_bd_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_axi_gpio_0_1/arm_tb_bd_axi_gpio_0_1.xdc] for cell 'arm_tb_bd_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_rst_ps8_0_99M_0/arm_tb_bd_rst_ps8_0_99M_0_board.xdc] for cell 'arm_tb_bd_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_rst_ps8_0_99M_0/arm_tb_bd_rst_ps8_0_99M_0_board.xdc] for cell 'arm_tb_bd_i/rst_ps8_0_99M/U0'
+Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_rst_ps8_0_99M_0/arm_tb_bd_rst_ps8_0_99M_0.xdc] for cell 'arm_tb_bd_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_rst_ps8_0_99M_0/arm_tb_bd_rst_ps8_0_99M_0.xdc] for cell 'arm_tb_bd_i/rst_ps8_0_99M/U0'
+Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_zynq_ultra_ps_e_0_5/arm_tb_bd_zynq_ultra_ps_e_0_5.xdc] for cell 'arm_tb_bd_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [c:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_zynq_ultra_ps_e_0_5/arm_tb_bd_zynq_ultra_ps_e_0_5.xdc] for cell 'arm_tb_bd_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc]
+WARNING: [Vivado 12-584] No ports matched 'GPIO3_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO3_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO3_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_1_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_1_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_1_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO1_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO1_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO1_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LUT6_OUT_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LUT6_OUT_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LUT6_OUT_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TEST_EN_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TEST_EN_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LUT4_OUT_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LUT4_OUT_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LUT4_OUT_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SC_HEAD_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SC_HEAD_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CCFF_TAIL_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CCFF_TAIL_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CCFF_TAIL_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO23_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO23_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO23_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO11_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO11_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO11_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO22_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO22_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO22_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO20_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO20_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO20_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO10_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO10_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO10_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO8_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO8_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO8_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO9_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO9_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO9_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO18_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO18_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO18_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO19_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO19_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO19_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO6_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO6_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO6_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO7_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO7_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO7_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC_SPYPAD_2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SC_TAIL_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SC_TAIL_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SC_TAIL_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'COUT_SPYPAD_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'COUT_SPYPAD_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'COUT_SPYPAD_0_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CCFF_HEAD_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CCFF_HEAD_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PRESET_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PRESET_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO12_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO12_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO12_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO16_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO16_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO16_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO13_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO13_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO13_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PROG_CLK_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PROG_CLK_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PROG_CLK_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO17_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO17_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO17_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 't3_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:180]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 't3_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 't2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 't2_pad'. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:184]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc:184]
+Finished Parsing XDC File [C:/Users/lnis/Documents/GF12_Testbed/src/constr/TEBF0808_mappings.xdc]
+Parsing XDC File [C:/Users/lnis/Documents/GF12_Testbed/src/constr/arm_gpio_mappings.xdc]
+Finished Parsing XDC File [C:/Users/lnis/Documents/GF12_Testbed/src/constr/arm_gpio_mappings.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1455.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 9 instances
+
+16 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1455.949 ; gain = 401.352
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu2eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.551 ; gain = 19.602
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1c537f4d2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1697.195 ; gain = 221.645
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 16 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 25133dc51
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.458 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 270 cells
+INFO: [Opt 31-1021] In phase Retarget, 9 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 25bc561d0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 21 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 254a930bb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 326 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 254a930bb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 254a930bb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 254a930bb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               2  |             270  |                                              9  |
+|  Constant propagation         |               0  |              21  |                                              0  |
+|  Sweep                        |               0  |             326  |                                              1  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1911.078 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14e67d333
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1911.078 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 14e67d333
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1911.078 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 14e67d333
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1911.078 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1911.078 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 14e67d333
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1911.078 ; gain = 455.129
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1911.078 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file arm_tb_bd_wrapper_drc_opted.rpt -pb arm_tb_bd_wrapper_drc_opted.pb -rpx arm_tb_bd_wrapper_drc_opted.rpx
+Command: report_drc -file arm_tb_bd_wrapper_drc_opted.rpt -pb arm_tb_bd_wrapper_drc_opted.pb -rpx arm_tb_bd_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1924.996 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 108b5db8a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1924.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1924.996 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16bc7f311
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 230667bbb
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 230667bbb
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 1 Placer Initialization | Checksum: 230667bbb
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1f9f53792
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1f9f53792
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1f9f53792
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 17573a5a4
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 17573a5a4
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 2.1.1 Partition Driven Placement | Checksum: 17573a5a4
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 2.1 Floorplanning | Checksum: 1dd3a92a4
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 19 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 9 nets or cells. Created 0 new cell, deleted 9 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |              9  |                     9  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |              9  |                     9  |           0  |           3  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 175254998
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 2.2 Global Placement Core | Checksum: 179b01e82
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 2 Global Placement | Checksum: 179b01e82
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 11dc7a836
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: c8e0c48f
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1683a9179
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.4 Small Shape DP
+
+Phase 3.4.1 Small Shape Clustering
+Phase 3.4.1 Small Shape Clustering | Checksum: 169a5c6c4
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.4.2 Flow Legalize Slice Clusters
+Phase 3.4.2 Flow Legalize Slice Clusters | Checksum: 11b517e46
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.4.3 Slice Area Swap
+Phase 3.4.3 Slice Area Swap | Checksum: e674b102
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 3.4 Small Shape DP | Checksum: 15dc39a64
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 170c6b439
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 3.6 Pipeline Register Optimization
+Phase 3.6 Pipeline Register Optimization | Checksum: b5e811ff
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 3 Detail Placement | Checksum: b5e811ff
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 12c4f22fe
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=7.619 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 140b4c285
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: def029c2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 12c4f22fe
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+INFO: [Place 30-746] Post Placement Timing Summary WNS=7.619. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1513f3611
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 4.1 Post Commit Optimization | Checksum: 1513f3611
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1513f3611
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 15288fd04
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1dc84514b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1dc84514b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+Ending Placer Task | Checksum: 124834d53
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 3323.445 ; gain = 1398.449
+INFO: [Common 17-83] Releasing license: Implementation
+70 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 3323.445 ; gain = 1400.594
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.322 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file arm_tb_bd_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file arm_tb_bd_wrapper_utilization_placed.rpt -pb arm_tb_bd_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file arm_tb_bd_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+79 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.323 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu2eg'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 314c5822 ConstDB: 0 ShapeSum: f1ed2e3e RouteDB: 149c6f3
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Phase 1 Build RT Design | Checksum: 190651817
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Post Restoration Checksum: NetGraph: da887b52 NumContArr: be1b3d00 Constraints: 9f579c28 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 237fb547a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 237fb547a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 237fb547a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 15c9c2db6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 1ca304304
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.733  | TNS=0.000  | WHS=-0.022 | THS=-0.041 |
+
+Phase 2 Router Initialization | Checksum: 16f16ba5e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1033
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 875
+  Number of Partially Routed Nets     = 158
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 2a75935eb
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 117
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.364  | TNS=0.000  | WHS=0.026  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 189d60493
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 186aa612d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 186aa612d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1aa4b8b44
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1aa4b8b44
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1aa4b8b44
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 223fe0629
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.364  | TNS=0.000  | WHS=0.026  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 223fe0629
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 223fe0629
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.144664 %
+  Global Horizontal Routing Utilization  = 0.177223 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1edd6836a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1edd6836a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1edd6836a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=7.364  | TNS=0.000  | WHS=0.026  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1edd6836a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3323.445 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.347 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file arm_tb_bd_wrapper_drc_routed.rpt -pb arm_tb_bd_wrapper_drc_routed.pb -rpx arm_tb_bd_wrapper_drc_routed.rpx
+Command: report_drc -file arm_tb_bd_wrapper_drc_routed.rpt -pb arm_tb_bd_wrapper_drc_routed.pb -rpx arm_tb_bd_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file arm_tb_bd_wrapper_methodology_drc_routed.rpt -pb arm_tb_bd_wrapper_methodology_drc_routed.pb -rpx arm_tb_bd_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file arm_tb_bd_wrapper_methodology_drc_routed.rpt -pb arm_tb_bd_wrapper_methodology_drc_routed.pb -rpx arm_tb_bd_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/arm_tb_bd_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file arm_tb_bd_wrapper_power_routed.rpt -pb arm_tb_bd_wrapper_power_summary_routed.pb -rpx arm_tb_bd_wrapper_power_routed.rpx
+Command: report_power -file arm_tb_bd_wrapper_power_routed.rpt -pb arm_tb_bd_wrapper_power_summary_routed.pb -rpx arm_tb_bd_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+105 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file arm_tb_bd_wrapper_route_status.rpt -pb arm_tb_bd_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file arm_tb_bd_wrapper_timing_summary_routed.rpt -pb arm_tb_bd_wrapper_timing_summary_routed.pb -rpx arm_tb_bd_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file arm_tb_bd_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file arm_tb_bd_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file arm_tb_bd_wrapper_bus_skew_routed.rpt -pb arm_tb_bd_wrapper_bus_skew_routed.pb -rpx arm_tb_bd_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force arm_tb_bd_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu2eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu2eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./arm_tb_bd_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+123 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 3323.445 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  4 09:23:31 2021...

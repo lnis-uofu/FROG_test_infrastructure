@@ -1,0 +1,32 @@
+2021-06-02T11:39:55.605049400255-11:39:55 **** Incremental Build of configuration Debug for project arm ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/sw/testbench_bd_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'main':
+000/arm/src/helloworld.c110-1-1implicit declaration of function 'usleep' [-Wimplicit-function-declaration]1-../src/helloworld.c:110:6: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+000-  110 |      usleep(1000); // Hold RESET high for at least 1ms
+000-      |      ^~~~~~
+000/arm/src/helloworld.c143-1-1implicit declaration of function 'sleep' [-Wimplicit-function-declaration]1-../src/helloworld.c:143:6: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+000-  143 |      sleep(1);
+000-      |      ^~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: arm.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/sw/testbench_bd_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "arm.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: arm.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  33488	   1152	  22632	  57272	   dfb8	arm.elf
+000-'Finished building: arm.elf.size'
+000-' '
+00255-
+11:39:56 Build Finished (took 756ms)
+

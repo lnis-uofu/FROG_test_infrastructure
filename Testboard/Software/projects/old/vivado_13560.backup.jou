@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May 17 11:47:27 2021
+# Process ID: 13560
+# Current directory: C:/Users/lnis/Documents/GF12_Testbed
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11868 C:\Users\lnis\Documents\GF12_Testbed\gf12_testbed.xpr
+# Log file: C:/Users/lnis/Documents/GF12_Testbed/vivado.log
+# Journal file: C:/Users/lnis/Documents/GF12_Testbed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.xpr
+update_compile_order -fileset sources_1

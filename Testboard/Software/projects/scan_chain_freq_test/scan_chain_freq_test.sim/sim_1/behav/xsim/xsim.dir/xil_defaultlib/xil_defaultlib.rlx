@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/github/GF12_Testbed/projects/scan_chain_freq_test/scan_chain_freq_test.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/github/GF12_Testbed/src/design/clock_divider.v,1621892362,verilog,,D:/github/GF12_Testbed/src/design/reset_generator.v,,clock_divider,,,,,,,,
+D:/github/GF12_Testbed/src/design/pulse_generator.v,1621892362,verilog,,D:/github/GF12_Testbed/src/design/reset_generator.v,,pulse_generator,,,,,,,,
+D:/github/GF12_Testbed/src/design/reset_generator.v,1621892362,verilog,,D:/github/GF12_Testbed/src/design/scan_chain_freq_test.v,,reset_generator,,,,,,,,
+D:/github/GF12_Testbed/src/design/scan_chain_freq_test.v,1621966602,verilog,,D:/github/GF12_Testbed/src/sim/scan_chain_freq_test_tb.v,,scan_chain_freq_test,,,,,,,,
+D:/github/GF12_Testbed/src/design/scanchain_manager.v,1621892362,verilog,,D:/github/GF12_Testbed/src/design/scan_chain_freq_test.v,D:/github/GF12_Testbed/src/design/clock_divider.v;D:/github/GF12_Testbed/src/design/pulse_generator.v,scanchain_manager,,,,,,,,
+D:/github/GF12_Testbed/src/sim/scan_chain_freq_test_tb.v,1621965932,verilog,,,,scan_chain_freq_test_tb,,,,,,,,

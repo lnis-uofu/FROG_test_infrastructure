@@ -1,0 +1,25 @@
+10:34:00 **** Incremental Build of configuration Debug for project testbench ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/vitis/arm_tb_bd_wrapper/export/arm_tb_bd_wrapper/sw/arm_tb_bd_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  101 |   usleep(1000); // Hold RESET high for at least 1ms
+      |   ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: testbench.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/vitis/arm_tb_bd_wrapper/export/arm_tb_bd_wrapper/sw/arm_tb_bd_wrapper/domain_psu_cortexa53_0/bsplib/lib -o "testbench.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: testbench.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size testbench.elf  |tee "testbench.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96575	   4584	  20789	 121948	  1dc5c	testbench.elf
+'Finished building: testbench.elf.size'
+' '
+
+10:34:00 Build Finished (took 620ms)
+

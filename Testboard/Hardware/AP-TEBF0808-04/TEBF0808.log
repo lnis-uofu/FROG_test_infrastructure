@@ -1,0 +1,44 @@
+P-CAD Schematic ASCII File Export Log :
+      Information : Start export of symbol definitions for parts
+      Warning :     Symbol name [CON-160], mode [Normal], part [1] changed to [CON-160_1_N]
+      Warning :     Rectangle [0mil : -8100mil]-[200mil : 0mil] exported as lines.
+      Warning :     Symbol name [RES], mode [Normal], part [1] changed to [RES_1_N]
+      Warning :     Symbol name [TPS780DRV], mode [Normal], part [1] changed to [TPS780DRV_1_N]
+      Warning :     Rectangle [0mil : -500mil]-[700mil : 0mil] exported as lines.
+      Warning :     Symbol name [CAP-NP], mode [Normal], part [1] changed to [CAP-NP_1_N]
+      Warning :     Symbol name [BH1060], mode [Normal], part [1] changed to [BH1060_1_N]
+      Warning :     Rectangle [-300mil : -350mil]-[300mil : -300mil] exported as lines.
+      Warning :     Rectangle [-150mil : -440mil]-[150mil : -390mil] exported as lines.
+      Warning :     Symbol name [TP], mode [Normal], part [1] changed to [TP_1_N]
+      Warning :     Ellipse at position [200mil : 0mil] approximated with a circular arc
+      Warning :     Symbol name [SDMG0340LC], mode [Normal], part [1] changed to [SDMG0340LC_1_N]
+      Warning :     Rectangle [0mil : -400mil]-[300mil : 0mil] exported as lines.
+      Warning :     Ellipse at position [200mil : -200mil] approximated with a circular arc
+      Warning :     Symbol name [IND], mode [Normal], part [1] changed to [IND_1_N]
+      Warning :     Symbol name [PCIe-x16-E.C.Connector], mode [Normal], part [1] changed to [PCIe-x16-E.C.Connector_1_N]
+      Warning :     Rectangle [0mil : -8400mil]-[900mil : 0mil] exported as lines.
+      Warning :     Symbol name [1-2007492-5], mode [Normal], part [1] changed to [1-2007492-5_1_N]
+      Warning :     Rectangle [0mil : -1500mil]-[1100mil : 0mil] exported as lines.
+      Warning :     Symbol name [1-2007492-5], mode [Normal], part [2] changed to [1-2007492-5_2_N]
+      Warning :     Rectangle [0mil : -1500mil]-[1100mil : 0mil] exported as lines.
+      Warning :     Symbol name [LED_GRUEN], mode [Normal], part [1] changed to [LED_GRUEN_1_N]
+      Warning :     Symbol name [LED_ROT], mode [Normal], part [1] changed to [LED_ROT_1_N]
+      Warning :     Symbol name [PCF8574DWR], mode [Normal], part [1] changed to [PCF8574DWR_1_N]
+      Warning :     Rectangle [0mil : -1100mil]-[800mil : 0mil] exported as lines.
+      Warning :     Symbol name [USB3_ICC_A], mode [Normal], part [1] changed to [USB3_ICC_A_1_N]
+      Warning :     Rectangle [0mil : -2000mil]-[800mil : 0mil] exported as lines.
+      Warning :     Symbol name [AP2186], mode [Normal], part [1] changed to [AP2186_1_N]
+      Warning :     Rectangle [0mil : -900mil]-[700mil : 0mil] exported as lines.
+      Warning :     Symbol name [7497110616], mode [Normal], part [1] changed to [7497110616_1_N]
+      Warning :     Rectangle [0mil : -1400mil]-[800mil : 0mil] exported as lines.
+      Warning :     Symbol name [7497110616], mode [Normal], part [2] changed to [7497110616_2_N]
+      Warning :     Rectangle [0mil : -1400mil]-[800mil : 0mil] exported as lines.
+      Warning :     Symbol name [7497110616], mode [Normal], part [3] changed to [7497110616_3_N]
+      Warning :     Rectangle [0mil : -2900mil]-[1400mil : 0mil] exported as lines.
+      Warning :     Ellipse at position [430mil : -750mil] approximated with a circular arc
+      Warning :     Ellipse at position [430mil : -1250mil] approximated with a circular arc
+      Warning :     Ellipse at position [430mil : -1750mil] approximated with a circular arc
+      Warning :     Ellipse at position [1200mil : -750mil] approximated with a circular arc
+      Warning :     Ellipse at position [1200mil : -1250mil] approximated with a circular arc
+      Warning :     Ellipse at position [1200mil : -1750mil] approximated with a circular arc
+EndLog

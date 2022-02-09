@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jun  7 14:01:41 2021
+# Process ID: 31452
+# Current directory: C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9344 C:\Users\lnis\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.xpr
+# Log file: C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/vivado.log
+# Journal file: C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.xpr
+update_compile_order -fileset sources_1

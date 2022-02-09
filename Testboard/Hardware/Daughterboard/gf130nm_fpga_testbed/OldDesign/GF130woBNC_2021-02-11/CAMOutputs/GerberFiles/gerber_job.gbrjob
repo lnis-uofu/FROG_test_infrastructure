@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-02-12T00:20:24Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.641,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "GF130woBNC"
+        },
+        "Owner": "Nathan Page <nathan.page@utah.edu>",
+        "Size": {
+            "X": 74,
+            "Y": 89
+        }
+    }
+}

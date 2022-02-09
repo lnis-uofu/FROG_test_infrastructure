@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May 17 11:47:27 2021
+# Process ID: 13560
+# Current directory: C:/Users/lnis/Documents/GF12_Testbed
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11868 C:\Users\lnis\Documents\GF12_Testbed\gf12_testbed.xpr
+# Log file: C:/Users/lnis/Documents/GF12_Testbed/vivado.log
+# Journal file: C:/Users/lnis/Documents/GF12_Testbed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1017.145 ; gain = 0.000
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'clock_divider' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'pulse_generator' [C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.srcs/sources_1/new/pulse_generator.v:22]
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 17 11:48:45 2021...

@@ -1,0 +1,37 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 4aa06a0489d24ce383e0361089298edc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'DOADO' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:143]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RSTRAMARSTRAM' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:154]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RSTREGARSTREG' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:155]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'DIADI' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:158]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'DIPADIP' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:159]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 14 for port 'ADDRBWRADDR' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:162]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'CLKBWRCLK' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:163]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ENBWREN' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:164]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'REGCEB' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:165]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RSTRAMB' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:166]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RSTREGB' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:167]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'WEBWE' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:168]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'DIBDI' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:170]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'DIPBDIP' [C:/Users/apond/Documents/GF12_Testbed/src/design/bitstream_loader.v:171]
+WARNING: [VRFC 10-5021] port 'GPIO3_pad' is not connected on this instance [C:/Users/apond/Documents/GF12_Testbed/src/sim/tb.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_divider(CLK_DIVIDER_SIZE=1...
+Compiling module xil_defaultlib.scanchain_manager_default
+Compiling module xil_defaultlib.reset_generator(INITIAL_VALUE=1,...
+Compiling module xil_defaultlib.clock_divider(CLK_DIVIDER_SIZE=1...
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB18E1(INIT_00=256'b0111111100...
+Compiling module xil_defaultlib.bitstream_loader
+Compiling module xil_defaultlib.configuration_manager
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

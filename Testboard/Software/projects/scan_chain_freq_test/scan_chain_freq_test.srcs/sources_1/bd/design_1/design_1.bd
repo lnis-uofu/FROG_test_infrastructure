@@ -1,0 +1,627 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3CD8D387FC67D178",
+      "device": "xczu4eg-sfvc784-1-e",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "zynq_ultra_ps_e_0": "",
+      "scan_chain_freq_test_0": ""
+    },
+    "ports": {
+      "GPIO3_pad": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "TEST_EN_pad": {
+        "direction": "O"
+      },
+      "CC_SPYPAD_1_pad": {
+        "direction": "I"
+      },
+      "CC_SPYPAD_0_pad": {
+        "direction": "I"
+      },
+      "CC_SPYPAD_2_pad": {
+        "direction": "I"
+      },
+      "CCFF_HEAD_pad": {
+        "direction": "O"
+      },
+      "CCFF_TAIL_pad": {
+        "direction": "I"
+      },
+      "CLK_pad": {
+        "direction": "O"
+      },
+      "COUT_SPYPAD_0_pad": {
+        "direction": "I"
+      },
+      "GPIO0_pad": {
+        "direction": "I"
+      },
+      "GPIO1_pad": {
+        "direction": "I"
+      },
+      "GPIO2_pad": {
+        "direction": "I"
+      },
+      "GPIO6_pad": {
+        "direction": "I"
+      },
+      "GPIO7_pad": {
+        "direction": "I"
+      },
+      "LUT4_OUT_0_pad": {
+        "direction": "I"
+      },
+      "LUT6_OUT_0_pad": {
+        "direction": "I"
+      },
+      "GPIO23_pad": {
+        "direction": "I"
+      },
+      "GPIO22_pad": {
+        "direction": "I"
+      },
+      "GPIO19_pad": {
+        "direction": "I"
+      },
+      "GPIO18_pad": {
+        "direction": "I"
+      },
+      "GPIO17_pad": {
+        "direction": "I"
+      },
+      "GPIO16_pad": {
+        "direction": "I"
+      },
+      "GPIO13_pad": {
+        "direction": "I"
+      },
+      "GPIO11_pad": {
+        "direction": "I"
+      },
+      "GPIO10_pad": {
+        "direction": "I"
+      },
+      "GPIO9_pad": {
+        "direction": "I"
+      },
+      "GPIO8_pad": {
+        "direction": "I"
+      },
+      "GPIO20_pad": {
+        "direction": "I"
+      },
+      "SC_TAIL_pad": {
+        "direction": "I"
+      },
+      "GPIO12_pad": {
+        "direction": "I"
+      },
+      "t3_pad": {
+        "direction": "I"
+      },
+      "PRESET_pad": {
+        "direction": "O"
+      },
+      "SC_HEAD_pad": {
+        "direction": "O"
+      },
+      "RESET_pad": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "PROG_CLK_pad": {
+        "direction": "O"
+      },
+      "t0_pad": {
+        "direction": "O"
+      },
+      "t1_pad": {
+        "direction": "O"
+      },
+      "t2_pad": {
+        "direction": "O"
+      },
+      "t0_is_output": {
+        "direction": "O"
+      },
+      "t1_is_output": {
+        "direction": "O"
+      },
+      "t2_is_output": {
+        "direction": "O"
+      },
+      "t3_is_output": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "zynq_ultra_ps_e_0": {
+        "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.3",
+        "xci_name": "design_1_zynq_ultra_ps_e_0_0",
+        "parameters": {
+          "PSU_DDR_RAM_HIGHADDR_OFFSET": {
+            "value": "0x00000002"
+          },
+          "PSU_DDR_RAM_LOWADDR_OFFSET": {
+            "value": "0x80000000"
+          },
+          "PSU__DDR_HIGH_ADDRESS_GUI_ENABLE": {
+            "value": "0"
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "1T",
+              "width": "40"
+            }
+          },
+          "interface_ports": {
+            "M_AXI_HPM0_LPD": {
+              "mode": "Master",
+              "address_space_ref": "Data",
+              "base_address": {
+                "minimum": "0x80000000",
+                "maximum": "0x9FFFFFFF"
+              }
+            }
+          }
+        }
+      },
+      "scan_chain_freq_test_0": {
+        "vlnv": "xilinx.com:module_ref:scan_chain_freq_test:1.0",
+        "xci_name": "design_1_scan_chain_freq_test_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "scan_chain_freq_test",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sys_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_zynq_ultra_ps_e_0_0_pl_clk0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "99999001",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "GPIO3_pad": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "GPIO0_pad": {
+            "direction": "I"
+          },
+          "CC_SPYPAD_1_pad": {
+            "direction": "I"
+          },
+          "RESET_pad": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "CLK_pad": {
+            "direction": "O"
+          },
+          "GPIO2_pad": {
+            "direction": "I"
+          },
+          "GPIO1_pad": {
+            "direction": "I"
+          },
+          "LUT6_OUT_0_pad": {
+            "direction": "I"
+          },
+          "TEST_EN_pad": {
+            "direction": "O"
+          },
+          "LUT4_OUT_0_pad": {
+            "direction": "I"
+          },
+          "SC_HEAD_pad": {
+            "direction": "O"
+          },
+          "CCFF_TAIL_pad": {
+            "direction": "I"
+          },
+          "GPIO23_pad": {
+            "direction": "I"
+          },
+          "GPIO11_pad": {
+            "direction": "I"
+          },
+          "GPIO22_pad": {
+            "direction": "I"
+          },
+          "GPIO20_pad": {
+            "direction": "I"
+          },
+          "GPIO10_pad": {
+            "direction": "I"
+          },
+          "GPIO8_pad": {
+            "direction": "I"
+          },
+          "GPIO9_pad": {
+            "direction": "I"
+          },
+          "GPIO18_pad": {
+            "direction": "I"
+          },
+          "GPIO19_pad": {
+            "direction": "I"
+          },
+          "GPIO6_pad": {
+            "direction": "I"
+          },
+          "GPIO7_pad": {
+            "direction": "I"
+          },
+          "CC_SPYPAD_0_pad": {
+            "direction": "I"
+          },
+          "CC_SPYPAD_2_pad": {
+            "direction": "I"
+          },
+          "SC_TAIL_pad": {
+            "direction": "I"
+          },
+          "COUT_SPYPAD_0_pad": {
+            "direction": "I"
+          },
+          "CCFF_HEAD_pad": {
+            "direction": "O"
+          },
+          "PRESET_pad": {
+            "direction": "O"
+          },
+          "GPIO12_pad": {
+            "direction": "I"
+          },
+          "GPIO16_pad": {
+            "direction": "I"
+          },
+          "GPIO13_pad": {
+            "direction": "I"
+          },
+          "PROG_CLK_pad": {
+            "direction": "O"
+          },
+          "GPIO17_pad": {
+            "direction": "I"
+          },
+          "t0_pad": {
+            "direction": "O"
+          },
+          "t1_pad": {
+            "direction": "O"
+          },
+          "t2_pad": {
+            "direction": "O"
+          },
+          "t3_pad": {
+            "direction": "I"
+          },
+          "t0_is_output": {
+            "direction": "O"
+          },
+          "t1_is_output": {
+            "direction": "O"
+          },
+          "t2_is_output": {
+            "direction": "O"
+          },
+          "t3_is_output": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "zynq_ultra_ps_e_0_pl_clk0": {
+        "ports": [
+          "zynq_ultra_ps_e_0/pl_clk0",
+          "zynq_ultra_ps_e_0/maxihpm0_lpd_aclk",
+          "scan_chain_freq_test_0/sys_clk"
+        ]
+      },
+      "GPIO3_pad_1": {
+        "ports": [
+          "GPIO3_pad",
+          "scan_chain_freq_test_0/GPIO3_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_TEST_EN_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/TEST_EN_pad",
+          "TEST_EN_pad"
+        ]
+      },
+      "CC_SPYPAD_1_pad_1": {
+        "ports": [
+          "CC_SPYPAD_1_pad",
+          "scan_chain_freq_test_0/CC_SPYPAD_1_pad"
+        ]
+      },
+      "CC_SPYPAD_0_pad_1": {
+        "ports": [
+          "CC_SPYPAD_0_pad",
+          "scan_chain_freq_test_0/CC_SPYPAD_0_pad"
+        ]
+      },
+      "CC_SPYPAD_2_pad_1": {
+        "ports": [
+          "CC_SPYPAD_2_pad",
+          "scan_chain_freq_test_0/CC_SPYPAD_2_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_CCFF_HEAD_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/CCFF_HEAD_pad",
+          "CCFF_HEAD_pad"
+        ]
+      },
+      "CCFF_TAIL_pad_1": {
+        "ports": [
+          "CCFF_TAIL_pad",
+          "scan_chain_freq_test_0/CCFF_TAIL_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_CLK_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/CLK_pad",
+          "CLK_pad"
+        ]
+      },
+      "COUT_SPYPAD_0_pad_1": {
+        "ports": [
+          "COUT_SPYPAD_0_pad",
+          "scan_chain_freq_test_0/COUT_SPYPAD_0_pad"
+        ]
+      },
+      "GPIO0_pad_1": {
+        "ports": [
+          "GPIO0_pad",
+          "scan_chain_freq_test_0/GPIO0_pad"
+        ]
+      },
+      "GPIO1_pad_1": {
+        "ports": [
+          "GPIO1_pad",
+          "scan_chain_freq_test_0/GPIO1_pad"
+        ]
+      },
+      "GPIO2_pad_1": {
+        "ports": [
+          "GPIO2_pad",
+          "scan_chain_freq_test_0/GPIO2_pad"
+        ]
+      },
+      "GPIO6_pad_1": {
+        "ports": [
+          "GPIO6_pad",
+          "scan_chain_freq_test_0/GPIO6_pad"
+        ]
+      },
+      "GPIO7_pad_1": {
+        "ports": [
+          "GPIO7_pad",
+          "scan_chain_freq_test_0/GPIO7_pad"
+        ]
+      },
+      "LUT4_OUT_0_pad_1": {
+        "ports": [
+          "LUT4_OUT_0_pad",
+          "scan_chain_freq_test_0/LUT4_OUT_0_pad"
+        ]
+      },
+      "LUT6_OUT_0_pad_1": {
+        "ports": [
+          "LUT6_OUT_0_pad",
+          "scan_chain_freq_test_0/LUT6_OUT_0_pad"
+        ]
+      },
+      "GPIO23_pad_1": {
+        "ports": [
+          "GPIO23_pad",
+          "scan_chain_freq_test_0/GPIO23_pad"
+        ]
+      },
+      "GPIO22_pad_1": {
+        "ports": [
+          "GPIO22_pad",
+          "scan_chain_freq_test_0/GPIO22_pad"
+        ]
+      },
+      "GPIO19_pad_1": {
+        "ports": [
+          "GPIO19_pad",
+          "scan_chain_freq_test_0/GPIO19_pad"
+        ]
+      },
+      "GPIO18_pad_1": {
+        "ports": [
+          "GPIO18_pad",
+          "scan_chain_freq_test_0/GPIO18_pad"
+        ]
+      },
+      "GPIO17_pad_1": {
+        "ports": [
+          "GPIO17_pad",
+          "scan_chain_freq_test_0/GPIO17_pad"
+        ]
+      },
+      "GPIO16_pad_1": {
+        "ports": [
+          "GPIO16_pad",
+          "scan_chain_freq_test_0/GPIO16_pad"
+        ]
+      },
+      "GPIO13_pad_1": {
+        "ports": [
+          "GPIO13_pad",
+          "scan_chain_freq_test_0/GPIO13_pad"
+        ]
+      },
+      "GPIO11_pad_1": {
+        "ports": [
+          "GPIO11_pad",
+          "scan_chain_freq_test_0/GPIO11_pad"
+        ]
+      },
+      "GPIO10_pad_1": {
+        "ports": [
+          "GPIO10_pad",
+          "scan_chain_freq_test_0/GPIO10_pad"
+        ]
+      },
+      "GPIO9_pad_1": {
+        "ports": [
+          "GPIO9_pad",
+          "scan_chain_freq_test_0/GPIO9_pad"
+        ]
+      },
+      "GPIO8_pad_1": {
+        "ports": [
+          "GPIO8_pad",
+          "scan_chain_freq_test_0/GPIO8_pad"
+        ]
+      },
+      "GPIO20_pad_1": {
+        "ports": [
+          "GPIO20_pad",
+          "scan_chain_freq_test_0/GPIO20_pad"
+        ]
+      },
+      "SC_TAIL_pad_1": {
+        "ports": [
+          "SC_TAIL_pad",
+          "scan_chain_freq_test_0/SC_TAIL_pad"
+        ]
+      },
+      "GPIO12_pad_1": {
+        "ports": [
+          "GPIO12_pad",
+          "scan_chain_freq_test_0/GPIO12_pad"
+        ]
+      },
+      "t3_pad_1": {
+        "ports": [
+          "t3_pad",
+          "scan_chain_freq_test_0/t3_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_PRESET_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/PRESET_pad",
+          "PRESET_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_SC_HEAD_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/SC_HEAD_pad",
+          "SC_HEAD_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_RESET_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/RESET_pad",
+          "RESET_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_PROG_CLK_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/PROG_CLK_pad",
+          "PROG_CLK_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_t0_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/t0_pad",
+          "t0_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_t1_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/t1_pad",
+          "t1_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_t2_pad": {
+        "ports": [
+          "scan_chain_freq_test_0/t2_pad",
+          "t2_pad"
+        ]
+      },
+      "scan_chain_freq_test_0_t0_is_output": {
+        "ports": [
+          "scan_chain_freq_test_0/t0_is_output",
+          "t0_is_output"
+        ]
+      },
+      "scan_chain_freq_test_0_t1_is_output": {
+        "ports": [
+          "scan_chain_freq_test_0/t1_is_output",
+          "t1_is_output"
+        ]
+      },
+      "scan_chain_freq_test_0_t2_is_output": {
+        "ports": [
+          "scan_chain_freq_test_0/t2_is_output",
+          "t2_is_output"
+        ]
+      },
+      "scan_chain_freq_test_0_t3_is_output": {
+        "ports": [
+          "scan_chain_freq_test_0/t3_is_output",
+          "t3_is_output"
+        ]
+      }
+    },
+    "addressing": {
+      "/zynq_ultra_ps_e_0": {
+        "address_spaces": {
+          "Data": {
+            "range": "1T",
+            "width": "40"
+          }
+        }
+      }
+    }
+  }
+}

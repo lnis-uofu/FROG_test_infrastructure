@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="23683334fs"></ZoomStartTime>
+      <ZoomEndTime time="327083335fs"></ZoomEndTime>
+      <Cursor1Time time="74250000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb/test/PRESET_pad" type="logic">
+      <obj_property name="ElementShortName">PRESET_pad</obj_property>
+      <obj_property name="ObjectShortName">PRESET_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/test/PROG_CLK_pad" type="logic">
+      <obj_property name="ElementShortName">PROG_CLK_pad</obj_property>
+      <obj_property name="ObjectShortName">PROG_CLK_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/test/RESET_pad" type="logic">
+      <obj_property name="ElementShortName">RESET_pad</obj_property>
+      <obj_property name="ObjectShortName">RESET_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/test/CLK_pad" type="logic">
+      <obj_property name="ElementShortName">CLK_pad</obj_property>
+      <obj_property name="ObjectShortName">CLK_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/test/CCFF_HEAD_pad" type="logic">
+      <obj_property name="ElementShortName">CCFF_HEAD_pad</obj_property>
+      <obj_property name="ObjectShortName">CCFF_HEAD_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/test/cc_configuration_done" type="logic">
+      <obj_property name="ElementShortName">cc_configuration_done</obj_property>
+      <obj_property name="ObjectShortName">cc_configuration_done</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="testbench" location="C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/vitis/testbench" platform="C:/Users/lnis/Documents/GF12_Testbed/projects/arm_testbench/vitis/arm_tb_bd_wrapper/export/arm_tb_bd_wrapper/arm_tb_bd_wrapper.xpfm" platformUID="xilinx:te0803_2eg_1e::0.0(custom)" systemProject="testbench_system" sysConfig="arm_tb_bd_wrapper" runtime="cpp" cpu="domain_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="6976f2ed64d592dbc412d9c8e10df605">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1127629631">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1730416296" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

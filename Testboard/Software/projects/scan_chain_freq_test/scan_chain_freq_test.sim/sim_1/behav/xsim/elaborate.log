@@ -1,0 +1,18 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fd4b0144f4794c58bbd1fd35484ba38e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot scan_chain_freq_test_tb_behav xil_defaultlib.scan_chain_freq_test_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'GPIO3_pad' is not connected on this instance [D:/github/GF12_Testbed/src/sim/scan_chain_freq_test_tb.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_divider(CLK_DIVIDER_SIZE=1...
+Compiling module xil_defaultlib.reset_generator(INITIAL_VALUE=1,...
+Compiling module xil_defaultlib.reset_generator(INITIAL_VALUE=1,...
+Compiling module xil_defaultlib.scan_chain_freq_test
+Compiling module xil_defaultlib.scan_chain_freq_test_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot scan_chain_freq_test_tb_behav

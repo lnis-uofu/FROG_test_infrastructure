@@ -1,0 +1,16 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/lnis/Documents/GF12_Testbed/projects/zybo/zybo.srcs/sources_1/bd/testbench_bd/ip/testbench_bd_processing_system7_0_0/testbench_bd_processing_system7_0_0/testbench_bd_processing_system7_0_0_in_context.xdc rfile:../../../zybo.srcs/sources_1/bd/testbench_bd/ip/testbench_bd_processing_system7_0_0/testbench_bd_processing_system7_0_0/testbench_bd_processing_system7_0_0_in_context.xdc id:1 order:EARLY scoped_inst:testbench_bd_i/processing_system7_0} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/zybo.srcs/constrs_1/new/constraints.xdc rfile:../../../zybo.srcs/constrs_1/new/constraints.xdc id:2} [current_design]
+current_instance testbench_bd_i/processing_system7_0
+set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 10.000 [get_ports {}]
+current_instance
+set_property src_info {type:XDC file:2 line:126 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33     } [get_ports { GPIO_O[0] }]; #IO_L10P_T1_34 Sch=jc_p[1]
+set_property src_info {type:XDC file:2 line:127 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W15   IOSTANDARD LVCMOS33     } [get_ports { GPIO_O[1] }]; #IO_L10N_T1_34 Sch=jc_n[1]
+set_property src_info {type:XDC file:2 line:128 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33     } [get_ports { GPIO_O[2] }]; #IO_L1P_T0_34 Sch=jc_p[2]
+set_property src_info {type:XDC file:2 line:129 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33     } [get_ports { GPIO_O[3] }]; #IO_L1N_T0_34 Sch=jc_n[2]
+set_property src_info {type:XDC file:2 line:130 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33     } [get_ports { GPIO_O[4] }]; #IO_L8P_T1_34 Sch=jc_p[3]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo 210279653775A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo-210279653775A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo-210279653775A-13722093-0&quot;}}]}" key="devices_info_Local"/>
+	<item value="false" key="arm-skip_rev_check"/>
+	<item value="" key="arm-bmmFile"/>
+	<item value="Local" key="arm-target"/>
+	<item value="Auto Detect" key="arm-device"/>
+	<item value="arm" key="programfpga.sdxproject"/>
+	<item value="_ide/bitstream/testbench_bd_wrapper.bit" key="arm-bitFile"/>
+	<item value="false" key="arm-partial_bit"/>
+</section>

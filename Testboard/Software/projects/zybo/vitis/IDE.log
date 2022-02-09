@@ -1,0 +1,2320 @@
+13:51:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\apond\Documents\zybo\vitis\temp_xsdb_launch_script.tcl
+13:51:16 INFO  : Registering command handlers for Vitis TCF services
+13:51:18 INFO  : XSCT server has started successfully.
+13:51:18 INFO  : Successfully done setting XSCT server connection channel  
+13:51:18 INFO  : Platform repository initialization has completed.
+13:51:18 INFO  : plnx-install-location is set to ''
+13:51:18 INFO  : Successfully done setting workspace for the tool. 
+13:51:18 INFO  : Successfully done query RDI_DATADIR 
+13:52:03 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+13:52:03 INFO  : Result from executing command 'getPlatforms': 
+13:52:03 INFO  : Platform 'testbench_bd_wrapper' is added to custom repositories.
+13:52:10 INFO  : Platform 'testbench_bd_wrapper' is added to custom repositories.
+13:53:12 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+13:53:12 INFO  : Result from executing command 'getPlatforms': testbench_bd_wrapper|C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm
+13:53:12 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+13:53:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:54:00 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+13:54:00 INFO  : 'jtag frequency' command is executed.
+13:54:00 INFO  : Context for 'APU' is selected.
+13:54:00 INFO  : System reset is completed.
+13:54:03 INFO  : 'after 3000' command is executed.
+13:54:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+13:54:04 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+13:54:04 INFO  : Context for 'APU' is selected.
+13:54:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+13:54:04 INFO  : 'configparams force-mem-access 1' command is executed.
+13:54:04 INFO  : Context for 'APU' is selected.
+13:54:04 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+13:54:05 INFO  : 'ps7_init' command is executed.
+13:54:05 INFO  : 'ps7_post_config' command is executed.
+13:54:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:05 ERROR : Memory write error at 0x100000. MMU section translation fault
+13:54:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+----------------End of Script----------------
+
+13:54:05 ERROR : Memory write error at 0x100000. MMU section translation fault
+13:54:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:54:26 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+13:54:26 INFO  : 'jtag frequency' command is executed.
+13:54:26 INFO  : Context for 'APU' is selected.
+13:54:26 INFO  : System reset is completed.
+13:54:29 INFO  : 'after 3000' command is executed.
+13:54:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+13:54:31 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+13:54:31 INFO  : Context for 'APU' is selected.
+13:54:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+13:54:31 INFO  : 'configparams force-mem-access 1' command is executed.
+13:54:31 INFO  : Context for 'APU' is selected.
+13:54:31 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+13:54:31 INFO  : 'ps7_init' command is executed.
+13:54:31 INFO  : 'ps7_post_config' command is executed.
+13:54:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:31 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:54:31 INFO  : 'configparams force-mem-access 0' command is executed.
+13:54:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:57:32 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+13:58:01 INFO  : Disconnected from the channel tcfchan#2.
+13:58:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:58:02 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+13:58:02 INFO  : 'jtag frequency' command is executed.
+13:58:02 INFO  : Context for 'APU' is selected.
+13:58:02 INFO  : System reset is completed.
+13:58:05 INFO  : 'after 3000' command is executed.
+13:58:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+13:58:06 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+13:58:06 INFO  : Context for 'APU' is selected.
+13:58:06 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+13:58:06 INFO  : 'configparams force-mem-access 1' command is executed.
+13:58:06 INFO  : Context for 'APU' is selected.
+13:58:06 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+13:58:07 INFO  : 'ps7_init' command is executed.
+13:58:07 INFO  : 'ps7_post_config' command is executed.
+13:58:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:07 ERROR : Memory write error at 0x100000. MMU section translation fault
+13:58:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+----------------End of Script----------------
+
+13:58:07 ERROR : Memory write error at 0x100000. MMU section translation fault
+13:58:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:58:16 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+13:58:16 INFO  : 'jtag frequency' command is executed.
+13:58:16 INFO  : Context for 'APU' is selected.
+13:58:16 INFO  : System reset is completed.
+13:58:19 INFO  : 'after 3000' command is executed.
+13:58:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+13:58:21 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+13:58:21 INFO  : Context for 'APU' is selected.
+13:58:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+13:58:21 INFO  : 'configparams force-mem-access 1' command is executed.
+13:58:21 INFO  : Context for 'APU' is selected.
+13:58:21 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+13:58:21 INFO  : 'ps7_init' command is executed.
+13:58:21 INFO  : 'ps7_post_config' command is executed.
+13:58:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:21 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:58:21 INFO  : 'configparams force-mem-access 0' command is executed.
+13:58:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:58:39 INFO  : Disconnected from the channel tcfchan#3.
+13:59:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:04 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+13:59:04 INFO  : 'jtag frequency' command is executed.
+13:59:04 INFO  : Context for 'APU' is selected.
+13:59:04 INFO  : System reset is completed.
+13:59:07 INFO  : 'after 3000' command is executed.
+13:59:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+13:59:09 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+13:59:09 INFO  : Context for 'APU' is selected.
+13:59:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+13:59:09 INFO  : 'configparams force-mem-access 1' command is executed.
+13:59:09 INFO  : Context for 'APU' is selected.
+13:59:09 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+13:59:09 INFO  : 'ps7_init' command is executed.
+13:59:09 INFO  : 'ps7_post_config' command is executed.
+13:59:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:59:09 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:59:09 INFO  : 'configparams force-mem-access 0' command is executed.
+13:59:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:05:08 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:05:50 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:06:03 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:06:15 INFO  : Disconnected from the channel tcfchan#4.
+15:06:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:16 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:06:16 INFO  : 'jtag frequency' command is executed.
+15:06:16 INFO  : Context for 'APU' is selected.
+15:06:16 INFO  : System reset is completed.
+15:06:19 INFO  : 'after 3000' command is executed.
+15:06:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:06:20 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:06:20 INFO  : Context for 'APU' is selected.
+15:06:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:06:20 INFO  : 'configparams force-mem-access 1' command is executed.
+15:06:20 INFO  : Context for 'APU' is selected.
+15:06:20 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:06:20 INFO  : 'ps7_init' command is executed.
+15:06:20 INFO  : 'ps7_post_config' command is executed.
+15:06:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:21 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:06:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:06:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:07:14 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:07:18 INFO  : Disconnected from the channel tcfchan#5.
+15:07:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:19 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:07:19 INFO  : 'jtag frequency' command is executed.
+15:07:19 INFO  : Context for 'APU' is selected.
+15:07:19 INFO  : System reset is completed.
+15:07:22 INFO  : 'after 3000' command is executed.
+15:07:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:07:23 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:07:23 INFO  : Context for 'APU' is selected.
+15:07:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:07:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:07:23 INFO  : Context for 'APU' is selected.
+15:07:23 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:07:23 INFO  : 'ps7_init' command is executed.
+15:07:23 INFO  : 'ps7_post_config' command is executed.
+15:07:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:24 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:07:24 INFO  : 'configparams force-mem-access 0' command is executed.
+15:07:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:08:36 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:08:46 INFO  : Disconnected from the channel tcfchan#6.
+15:08:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:47 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:08:47 INFO  : 'jtag frequency' command is executed.
+15:08:47 INFO  : Context for 'APU' is selected.
+15:08:47 INFO  : System reset is completed.
+15:08:50 INFO  : 'after 3000' command is executed.
+15:08:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:08:52 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:08:52 INFO  : Context for 'APU' is selected.
+15:08:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:08:52 INFO  : 'configparams force-mem-access 1' command is executed.
+15:08:52 INFO  : Context for 'APU' is selected.
+15:08:52 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:08:52 INFO  : 'ps7_init' command is executed.
+15:08:52 INFO  : 'ps7_post_config' command is executed.
+15:08:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:52 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:08:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:09:55 INFO  : Disconnected from the channel tcfchan#7.
+15:09:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:57 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:09:57 INFO  : 'jtag frequency' command is executed.
+15:09:57 INFO  : Context for 'APU' is selected.
+15:09:57 INFO  : System reset is completed.
+15:10:00 INFO  : 'after 3000' command is executed.
+15:10:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:10:02 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:10:02 INFO  : Context for 'APU' is selected.
+15:10:02 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:10:02 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:02 INFO  : Context for 'APU' is selected.
+15:10:02 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:10:02 INFO  : 'ps7_init' command is executed.
+15:10:02 INFO  : 'ps7_post_config' command is executed.
+15:10:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:02 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:02 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:10:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:02 INFO  : 'con' command is executed.
+15:10:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:10:02 INFO  : Disconnected from the channel tcfchan#8.
+15:10:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:21 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:10:21 INFO  : 'jtag frequency' command is executed.
+15:10:21 INFO  : Context for 'APU' is selected.
+15:10:21 INFO  : System reset is completed.
+15:10:24 INFO  : 'after 3000' command is executed.
+15:10:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:10:25 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:10:25 INFO  : Context for 'APU' is selected.
+15:10:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:10:25 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:25 INFO  : Context for 'APU' is selected.
+15:10:25 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:10:25 INFO  : 'ps7_init' command is executed.
+15:10:25 INFO  : 'ps7_post_config' command is executed.
+15:10:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:26 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:26 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:10:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:26 INFO  : 'con' command is executed.
+15:10:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:10:26 INFO  : Launch script is exported to file 'C:\Users\apond\Documents\zybo\vitis\.sdk\launch_scripts\single_application_debug\debugger_arm-default.tcl'
+15:10:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:49 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:10:49 INFO  : 'jtag frequency' command is executed.
+15:10:49 INFO  : Context for 'APU' is selected.
+15:10:49 INFO  : System reset is completed.
+15:10:52 INFO  : 'after 3000' command is executed.
+15:10:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:10:53 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:10:53 INFO  : Context for 'APU' is selected.
+15:10:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:10:53 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:53 INFO  : Context for 'APU' is selected.
+15:10:53 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:10:53 INFO  : 'ps7_init' command is executed.
+15:10:53 INFO  : 'ps7_post_config' command is executed.
+15:10:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:53 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:53 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:11:32 INFO  : Disconnected from the channel tcfchan#9.
+15:11:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:34 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:11:34 INFO  : 'jtag frequency' command is executed.
+15:11:34 INFO  : Context for 'APU' is selected.
+15:11:34 INFO  : System reset is completed.
+15:11:37 INFO  : 'after 3000' command is executed.
+15:11:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:11:38 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:11:38 INFO  : Context for 'APU' is selected.
+15:11:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:11:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:11:38 INFO  : Context for 'APU' is selected.
+15:11:38 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:11:38 INFO  : 'ps7_init' command is executed.
+15:11:38 INFO  : 'ps7_post_config' command is executed.
+15:11:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:39 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:11:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:11:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:11:54 INFO  : Disconnected from the channel tcfchan#10.
+15:12:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:05 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:12:05 INFO  : 'jtag frequency' command is executed.
+15:12:07 INFO  : Context for 'APU' is selected.
+15:12:07 INFO  : System reset is completed.
+15:12:10 INFO  : 'after 3000' command is executed.
+15:12:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:12:11 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:12:12 INFO  : Context for 'APU' is selected.
+15:12:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:12:12 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:12 INFO  : Context for 'APU' is selected.
+15:12:12 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:12:12 INFO  : 'ps7_init' command is executed.
+15:12:12 INFO  : 'ps7_post_config' command is executed.
+15:12:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:12 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:12 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:12:42 INFO  : Disconnected from the channel tcfchan#11.
+15:12:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:44 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:12:44 INFO  : 'jtag frequency' command is executed.
+15:12:44 INFO  : Context for 'APU' is selected.
+15:12:44 INFO  : System reset is completed.
+15:12:47 INFO  : 'after 3000' command is executed.
+15:12:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:12:48 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:12:48 INFO  : Context for 'APU' is selected.
+15:12:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:12:48 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:48 INFO  : Context for 'APU' is selected.
+15:12:48 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:12:48 INFO  : 'ps7_init' command is executed.
+15:12:48 INFO  : 'ps7_post_config' command is executed.
+15:12:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:48 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:48 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:13:48 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:13:54 INFO  : Disconnected from the channel tcfchan#12.
+15:13:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:01 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:14:01 INFO  : 'jtag frequency' command is executed.
+15:14:01 INFO  : Context for 'APU' is selected.
+15:14:01 INFO  : System reset is completed.
+15:14:04 INFO  : 'after 3000' command is executed.
+15:14:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:14:09 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:14:10 INFO  : Context for 'APU' is selected.
+15:14:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:14:10 INFO  : 'configparams force-mem-access 1' command is executed.
+15:14:10 INFO  : Context for 'APU' is selected.
+15:14:10 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:14:10 INFO  : 'ps7_init' command is executed.
+15:14:10 INFO  : 'ps7_post_config' command is executed.
+15:14:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:11 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:14:11 INFO  : 'configparams force-mem-access 0' command is executed.
+15:14:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:15:14 WARN  : channel "tcfchan#9" closed
+15:17:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\apond\Documents\zybo\vitis\temp_xsdb_launch_script.tcl
+15:17:18 INFO  : XSCT server has started successfully.
+15:17:18 INFO  : Successfully done setting XSCT server connection channel  
+15:17:18 INFO  : plnx-install-location is set to ''
+15:17:18 INFO  : Successfully done setting workspace for the tool. 
+15:17:20 INFO  : Platform repository initialization has completed.
+15:17:21 INFO  : Successfully done query RDI_DATADIR 
+15:17:21 INFO  : Registering command handlers for Vitis TCF services
+15:17:37 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:17:45 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:18:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:04 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:18:04 INFO  : 'jtag frequency' command is executed.
+15:18:06 INFO  : Context for 'APU' is selected.
+15:18:06 INFO  : System reset is completed.
+15:18:09 INFO  : 'after 3000' command is executed.
+15:18:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:18:12 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:18:14 INFO  : Context for 'APU' is selected.
+15:18:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:18:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:18:14 INFO  : Context for 'APU' is selected.
+15:18:14 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:18:14 INFO  : 'ps7_init' command is executed.
+15:18:14 INFO  : 'ps7_post_config' command is executed.
+15:18:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:14 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:18:14 INFO  : 'configparams force-mem-access 0' command is executed.
+15:18:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:24:57 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:25:02 INFO  : Disconnected from the channel tcfchan#1.
+15:25:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:03 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:25:03 INFO  : 'jtag frequency' command is executed.
+15:25:03 INFO  : Context for 'APU' is selected.
+15:25:03 INFO  : System reset is completed.
+15:25:06 INFO  : 'after 3000' command is executed.
+15:25:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:25:08 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:25:08 INFO  : Context for 'APU' is selected.
+15:25:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:25:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:09 INFO  : Context for 'APU' is selected.
+15:25:09 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:25:10 INFO  : 'ps7_init' command is executed.
+15:25:10 INFO  : 'ps7_post_config' command is executed.
+15:25:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:10 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:24 INFO  : Disconnected from the channel tcfchan#2.
+15:25:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:28 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:25:28 INFO  : 'jtag frequency' command is executed.
+15:25:28 INFO  : Context for 'APU' is selected.
+15:25:28 INFO  : System reset is completed.
+15:25:31 INFO  : 'after 3000' command is executed.
+15:25:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:25:33 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:25:33 INFO  : Context for 'APU' is selected.
+15:25:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:25:34 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:34 INFO  : Context for 'APU' is selected.
+15:25:34 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:25:35 INFO  : 'ps7_init' command is executed.
+15:25:35 INFO  : 'ps7_post_config' command is executed.
+15:25:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:35 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:35 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:26:56 INFO  : Disconnected from the channel tcfchan#3.
+15:27:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:01 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:27:01 INFO  : 'jtag frequency' command is executed.
+15:27:01 INFO  : Context for 'APU' is selected.
+15:27:01 INFO  : System reset is completed.
+15:27:04 INFO  : 'after 3000' command is executed.
+15:27:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:27:05 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:27:05 INFO  : Context for 'APU' is selected.
+15:27:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:27:07 INFO  : 'configparams force-mem-access 1' command is executed.
+15:27:07 INFO  : Context for 'APU' is selected.
+15:27:07 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:27:07 INFO  : 'ps7_init' command is executed.
+15:27:07 INFO  : 'ps7_post_config' command is executed.
+15:27:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:07 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:27:07 INFO  : 'configparams force-mem-access 0' command is executed.
+15:27:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:32:25 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:32:27 INFO  : Disconnected from the channel tcfchan#4.
+15:32:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:30 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:32:30 INFO  : 'jtag frequency' command is executed.
+15:32:30 INFO  : Context for 'APU' is selected.
+15:32:30 INFO  : System reset is completed.
+15:32:33 INFO  : 'after 3000' command is executed.
+15:32:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:32:34 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:32:34 INFO  : Context for 'APU' is selected.
+15:32:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:32:36 INFO  : 'configparams force-mem-access 1' command is executed.
+15:32:36 INFO  : Context for 'APU' is selected.
+15:32:36 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:32:36 INFO  : 'ps7_init' command is executed.
+15:32:36 INFO  : 'ps7_post_config' command is executed.
+15:32:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:36 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:32:36 INFO  : 'configparams force-mem-access 0' command is executed.
+15:32:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:35:17 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:35:19 INFO  : Disconnected from the channel tcfchan#5.
+15:35:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:20 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:35:20 INFO  : 'jtag frequency' command is executed.
+15:35:20 INFO  : Context for 'APU' is selected.
+15:35:20 INFO  : System reset is completed.
+15:35:23 INFO  : 'after 3000' command is executed.
+15:35:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:35:25 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:35:25 INFO  : Context for 'APU' is selected.
+15:35:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:35:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:35:26 INFO  : Context for 'APU' is selected.
+15:35:26 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:35:26 INFO  : 'ps7_init' command is executed.
+15:35:26 INFO  : 'ps7_post_config' command is executed.
+15:35:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:27 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:35:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:35:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:38:14 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:38:14 INFO  : Disconnected from the channel tcfchan#6.
+15:38:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:17 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:38:17 INFO  : 'jtag frequency' command is executed.
+15:38:17 INFO  : Context for 'APU' is selected.
+15:38:17 INFO  : System reset is completed.
+15:38:20 INFO  : 'after 3000' command is executed.
+15:38:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:38:22 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:38:22 INFO  : Context for 'APU' is selected.
+15:38:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:38:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:38:23 INFO  : Context for 'APU' is selected.
+15:38:23 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:38:23 INFO  : 'ps7_init' command is executed.
+15:38:23 INFO  : 'ps7_post_config' command is executed.
+15:38:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:38:24 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:38:24 INFO  : 'configparams force-mem-access 0' command is executed.
+15:38:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:39:44 INFO  : Disconnected from the channel tcfchan#7.
+16:19:16 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+16:19:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:19:20 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+16:19:20 INFO  : 'jtag frequency' command is executed.
+16:19:20 INFO  : Context for 'APU' is selected.
+16:19:20 INFO  : System reset is completed.
+16:19:23 INFO  : 'after 3000' command is executed.
+16:19:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+16:19:24 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+16:19:24 INFO  : Context for 'APU' is selected.
+16:19:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+16:19:24 INFO  : 'configparams force-mem-access 1' command is executed.
+16:19:24 INFO  : Context for 'APU' is selected.
+16:19:24 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+16:19:24 INFO  : 'ps7_init' command is executed.
+16:19:25 INFO  : 'ps7_post_config' command is executed.
+16:19:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:25 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:19:25 INFO  : 'configparams force-mem-access 0' command is executed.
+16:19:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:21:26 INFO  : Hardware specification for platform project 'testbench_bd_wrapper' is updated.
+16:21:29 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+16:21:29 INFO  : Result from executing command 'getPlatforms': testbench_bd_wrapper|C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm
+16:21:33 INFO  : Disconnected from the channel tcfchan#8.
+16:21:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:21:34 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+16:21:34 INFO  : 'jtag frequency' command is executed.
+16:21:34 INFO  : Context for 'APU' is selected.
+16:21:34 INFO  : System reset is completed.
+16:21:37 INFO  : 'after 3000' command is executed.
+16:21:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+16:21:38 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+16:21:38 INFO  : Context for 'APU' is selected.
+16:21:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+16:21:38 INFO  : 'configparams force-mem-access 1' command is executed.
+16:21:38 INFO  : Context for 'APU' is selected.
+16:21:38 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+16:21:39 INFO  : 'ps7_init' command is executed.
+16:21:39 INFO  : 'ps7_post_config' command is executed.
+16:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:39 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:21:39 INFO  : 'configparams force-mem-access 0' command is executed.
+16:21:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:22:30 INFO  : The hardware specfication used by project 'arm' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+16:22:30 INFO  : The file 'C:\Users\apond\Documents\zybo\vitis\arm\_ide\bitstream\testbench_bd_wrapper.bit' stored in project is removed.
+16:22:30 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\apond\Documents\zybo\vitis\arm\_ide\bitstream' in project 'arm'.
+16:22:30 INFO  : The file 'C:\Users\apond\Documents\zybo\vitis\arm\_ide\psinit\ps7_init.tcl' stored in project is removed.
+16:22:34 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\apond\Documents\zybo\vitis\arm\_ide\psinit' in project 'arm'.
+16:22:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+16:22:37 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+16:22:40 INFO  : Disconnected from the channel tcfchan#10.
+16:22:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:41 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+16:22:41 INFO  : 'jtag frequency' command is executed.
+16:22:41 INFO  : Context for 'APU' is selected.
+16:22:41 INFO  : System reset is completed.
+16:22:44 INFO  : 'after 3000' command is executed.
+16:22:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+16:22:45 INFO  : FPGA configured successfully with bitstream "C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+16:22:45 INFO  : Context for 'APU' is selected.
+16:22:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+16:22:45 INFO  : 'configparams force-mem-access 1' command is executed.
+16:22:45 INFO  : Context for 'APU' is selected.
+16:22:45 INFO  : Sourcing of 'C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+16:22:45 INFO  : 'ps7_init' command is executed.
+16:22:45 INFO  : 'ps7_post_config' command is executed.
+16:22:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:22:46 INFO  : The application 'C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:22:46 INFO  : 'configparams force-mem-access 0' command is executed.
+16:22:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/apond/Documents/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/apond/Documents/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/apond/Documents/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:23:13 INFO  : Disconnected from the channel tcfchan#11.
+14:05:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\temp_xsdb_launch_script.tcl
+14:06:08 INFO  : XSCT server has started successfully.
+14:06:08 INFO  : Successfully done setting XSCT server connection channel  
+14:06:08 INFO  : plnx-install-location is set to ''
+14:06:08 INFO  : Successfully done setting workspace for the tool. 
+14:06:16 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+14:06:16 INFO  : Platform repository initialization has completed.
+14:06:17 INFO  : Registering command handlers for Vitis TCF services
+14:06:22 INFO  : Successfully done query RDI_DATADIR 
+14:07:22 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+14:07:22 INFO  : Result from executing command 'getPlatforms': 
+14:07:23 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+14:08:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:02 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:09:02 INFO  : 'jtag frequency' command is executed.
+14:09:02 INFO  : Context for 'APU' is selected.
+14:09:02 INFO  : System reset is completed.
+14:09:05 INFO  : 'after 3000' command is executed.
+14:09:27 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:09:27 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:09:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:09:27 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:12:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\temp_xsdb_launch_script.tcl
+14:12:26 INFO  : XSCT server has started successfully.
+14:12:26 INFO  : plnx-install-location is set to ''
+14:12:26 INFO  : Successfully done setting XSCT server connection channel  
+14:12:26 INFO  : Successfully done setting workspace for the tool. 
+14:12:30 INFO  : Platform repository initialization has completed.
+14:12:31 INFO  : Registering command handlers for Vitis TCF services
+14:12:31 INFO  : Successfully done query RDI_DATADIR 
+14:12:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:30 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:13:30 INFO  : 'jtag frequency' command is executed.
+14:13:30 INFO  : Context for 'APU' is selected.
+14:13:30 INFO  : System reset is completed.
+14:13:33 INFO  : 'after 3000' command is executed.
+14:13:45 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:13:45 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:13:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:13:45 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:14:42 INFO  : Hardware specification for platform project 'testbench_bd_wrapper' is updated.
+14:15:59 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+14:15:59 INFO  : Result from executing command 'getPlatforms': testbench_bd_wrapper|C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm
+14:15:59 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+14:17:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:20 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:18:20 INFO  : 'jtag frequency' command is executed.
+14:18:20 INFO  : Context for 'APU' is selected.
+14:18:20 INFO  : System reset is completed.
+14:18:23 INFO  : 'after 3000' command is executed.
+14:18:35 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:18:35 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:18:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:18:35 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:19:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:16 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:20:16 INFO  : 'jtag frequency' command is executed.
+14:20:16 INFO  : Context for 'APU' is selected.
+14:20:16 INFO  : System reset is completed.
+14:20:19 INFO  : 'after 3000' command is executed.
+14:20:31 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:20:31 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:20:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:20:31 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:26:52 INFO  : Hardware specification for platform project 'testbench_bd_wrapper' is updated.
+14:28:46 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+14:28:46 INFO  : Result from executing command 'getPlatforms': testbench_bd_wrapper|C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm
+14:28:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:50 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:29:50 INFO  : 'jtag frequency' command is executed.
+14:29:50 INFO  : Context for 'APU' is selected.
+14:29:50 INFO  : System reset is completed.
+14:29:53 INFO  : 'after 3000' command is executed.
+14:30:05 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:30:05 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:30:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:30:05 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:30:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:31:50 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:31:50 INFO  : 'jtag frequency' command is executed.
+14:31:50 INFO  : Context for 'APU' is selected.
+14:31:50 INFO  : System reset is completed.
+14:31:53 INFO  : 'after 3000' command is executed.
+14:32:06 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:32:06 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:32:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:32:06 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"". available targets:
+  1* APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4  xc7z010
+14:35:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\temp_xsdb_launch_script.tcl
+14:36:00 INFO  : XSCT server has started successfully.
+14:36:00 INFO  : Successfully done setting XSCT server connection channel  
+14:36:00 INFO  : plnx-install-location is set to ''
+14:36:00 INFO  : Successfully done setting workspace for the tool. 
+14:36:13 INFO  : Platform repository initialization has completed.
+14:36:14 INFO  : Registering command handlers for Vitis TCF services
+14:36:17 INFO  : Successfully done query RDI_DATADIR 
+14:36:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:45 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:36:45 INFO  : 'jtag frequency' command is executed.
+14:36:45 INFO  : Context for 'APU' is selected.
+14:36:45 INFO  : System reset is completed.
+14:36:48 INFO  : 'after 3000' command is executed.
+14:36:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+14:36:55 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+14:36:55 INFO  : Context for 'APU' is selected.
+14:36:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+14:36:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:36:56 INFO  : Context for 'APU' is selected.
+14:36:56 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+14:36:56 INFO  : 'ps7_init' command is executed.
+14:36:56 INFO  : 'ps7_post_config' command is executed.
+14:36:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:56 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:36:56 INFO  : 'configparams force-mem-access 0' command is executed.
+14:36:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:37:36 INFO  : Disconnected from the channel tcfchan#1.
+14:37:37 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+14:38:21 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+14:38:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:38:47 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:38:47 INFO  : 'jtag frequency' command is executed.
+14:38:47 INFO  : Context for 'APU' is selected.
+14:38:47 INFO  : System reset is completed.
+14:38:50 INFO  : 'after 3000' command is executed.
+14:38:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+14:38:54 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+14:38:54 INFO  : Context for 'APU' is selected.
+14:38:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+14:38:54 INFO  : 'configparams force-mem-access 1' command is executed.
+14:38:54 INFO  : Context for 'APU' is selected.
+14:38:54 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+14:38:55 INFO  : 'ps7_init' command is executed.
+14:38:55 INFO  : 'ps7_post_config' command is executed.
+14:38:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:55 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:38:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:38:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:48:21 INFO  : Disconnected from the channel tcfchan#2.
+14:48:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:42 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:48:42 INFO  : 'jtag frequency' command is executed.
+14:48:42 INFO  : Context for 'APU' is selected.
+14:48:42 INFO  : System reset is completed.
+14:48:45 INFO  : 'after 3000' command is executed.
+14:48:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+14:48:50 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+14:48:50 INFO  : Context for 'APU' is selected.
+14:48:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+14:48:52 INFO  : 'configparams force-mem-access 1' command is executed.
+14:48:52 INFO  : Context for 'APU' is selected.
+14:48:52 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+14:48:52 INFO  : 'ps7_init' command is executed.
+14:48:52 INFO  : 'ps7_post_config' command is executed.
+14:48:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:53 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:48:53 INFO  : 'configparams force-mem-access 0' command is executed.
+14:48:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:49:23 INFO  : Disconnected from the channel tcfchan#3.
+14:49:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:54 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:49:54 INFO  : 'jtag frequency' command is executed.
+14:49:54 INFO  : Context for 'APU' is selected.
+14:49:54 INFO  : System reset is completed.
+14:49:57 INFO  : 'after 3000' command is executed.
+14:50:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+14:50:01 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+14:50:01 INFO  : Context for 'APU' is selected.
+14:50:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+14:50:04 INFO  : 'configparams force-mem-access 1' command is executed.
+14:50:04 INFO  : Context for 'APU' is selected.
+14:50:04 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+14:50:04 INFO  : 'ps7_init' command is executed.
+14:50:04 INFO  : 'ps7_post_config' command is executed.
+14:50:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:50:04 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:50:04 INFO  : 'configparams force-mem-access 0' command is executed.
+14:50:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:58:38 INFO  : Disconnected from the channel tcfchan#4.
+14:58:39 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+14:58:47 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+14:58:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:59:14 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+14:59:14 INFO  : 'jtag frequency' command is executed.
+14:59:14 INFO  : Context for 'APU' is selected.
+14:59:14 INFO  : System reset is completed.
+14:59:17 INFO  : 'after 3000' command is executed.
+14:59:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+14:59:21 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+14:59:21 INFO  : Context for 'APU' is selected.
+14:59:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+14:59:21 INFO  : 'configparams force-mem-access 1' command is executed.
+14:59:21 INFO  : Context for 'APU' is selected.
+14:59:21 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+14:59:22 INFO  : 'ps7_init' command is executed.
+14:59:22 INFO  : 'ps7_post_config' command is executed.
+14:59:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:22 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:59:22 INFO  : 'configparams force-mem-access 0' command is executed.
+14:59:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:00:11 INFO  : Disconnected from the channel tcfchan#5.
+15:00:11 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:00:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:47 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:00:47 INFO  : 'jtag frequency' command is executed.
+15:00:47 INFO  : Context for 'APU' is selected.
+15:00:47 INFO  : System reset is completed.
+15:00:50 INFO  : 'after 3000' command is executed.
+15:00:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:00:54 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:00:54 INFO  : Context for 'APU' is selected.
+15:00:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:00:54 INFO  : 'configparams force-mem-access 1' command is executed.
+15:00:54 INFO  : Context for 'APU' is selected.
+15:00:54 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:00:55 INFO  : 'ps7_init' command is executed.
+15:00:55 INFO  : 'ps7_post_config' command is executed.
+15:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:00:55 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:00:55 INFO  : 'configparams force-mem-access 0' command is executed.
+15:00:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:34:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\temp_xsdb_launch_script.tcl
+15:34:36 INFO  : XSCT server has started successfully.
+15:34:36 INFO  : plnx-install-location is set to ''
+15:34:36 INFO  : Successfully done setting XSCT server connection channel  
+15:34:36 INFO  : Successfully done setting workspace for the tool. 
+15:34:40 INFO  : Platform repository initialization has completed.
+15:34:40 INFO  : Successfully done query RDI_DATADIR 
+15:34:40 INFO  : Registering command handlers for Vitis TCF services
+15:35:37 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:36:01 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:36:09 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:36:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:36:35 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:36:35 INFO  : 'jtag frequency' command is executed.
+15:36:35 INFO  : Context for 'APU' is selected.
+15:36:36 INFO  : System reset is completed.
+15:36:39 INFO  : 'after 3000' command is executed.
+15:36:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:36:46 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:36:46 INFO  : Context for 'APU' is selected.
+15:36:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:36:46 INFO  : 'configparams force-mem-access 1' command is executed.
+15:36:46 INFO  : Context for 'APU' is selected.
+15:36:46 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:36:47 INFO  : 'ps7_init' command is executed.
+15:36:47 INFO  : 'ps7_post_config' command is executed.
+15:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:36:47 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:36:47 INFO  : 'configparams force-mem-access 0' command is executed.
+15:36:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:38:24 INFO  : Disconnected from the channel tcfchan#1.
+15:38:24 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:38:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:50 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:38:50 INFO  : 'jtag frequency' command is executed.
+15:38:50 INFO  : Context for 'APU' is selected.
+15:38:50 INFO  : System reset is completed.
+15:38:53 INFO  : 'after 3000' command is executed.
+15:38:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:38:58 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:38:58 INFO  : Context for 'APU' is selected.
+15:38:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:38:58 INFO  : 'configparams force-mem-access 1' command is executed.
+15:38:58 INFO  : Context for 'APU' is selected.
+15:38:58 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:38:58 INFO  : 'ps7_init' command is executed.
+15:38:58 INFO  : 'ps7_post_config' command is executed.
+15:38:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:38:58 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:38:58 INFO  : 'configparams force-mem-access 0' command is executed.
+15:38:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:41:33 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:41:35 INFO  : Disconnected from the channel tcfchan#2.
+15:41:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:41:58 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:41:58 INFO  : 'jtag frequency' command is executed.
+15:41:58 INFO  : Context for 'APU' is selected.
+15:41:58 INFO  : System reset is completed.
+15:42:01 INFO  : 'after 3000' command is executed.
+15:42:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:42:06 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:42:06 INFO  : Context for 'APU' is selected.
+15:42:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:42:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:42:09 INFO  : Context for 'APU' is selected.
+15:42:09 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:42:09 INFO  : 'ps7_init' command is executed.
+15:42:09 INFO  : 'ps7_post_config' command is executed.
+15:42:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:42:09 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:42:09 INFO  : 'configparams force-mem-access 0' command is executed.
+15:42:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:45:57 INFO  : Disconnected from the channel tcfchan#3.
+15:45:57 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:46:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:15 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:47:15 INFO  : 'jtag frequency' command is executed.
+15:47:15 INFO  : Context for 'APU' is selected.
+15:47:15 INFO  : System reset is completed.
+15:47:18 INFO  : 'after 3000' command is executed.
+15:47:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:47:23 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:47:23 INFO  : Context for 'APU' is selected.
+15:47:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:47:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:47:23 INFO  : Context for 'APU' is selected.
+15:47:23 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:47:23 INFO  : 'ps7_init' command is executed.
+15:47:23 INFO  : 'ps7_post_config' command is executed.
+15:47:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:23 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:47:23 INFO  : 'configparams force-mem-access 0' command is executed.
+15:47:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:58 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:49:14 INFO  : Disconnected from the channel tcfchan#4.
+15:49:14 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:49:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:49:37 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:49:37 INFO  : 'jtag frequency' command is executed.
+15:49:37 INFO  : Context for 'APU' is selected.
+15:49:37 INFO  : System reset is completed.
+15:49:40 INFO  : 'after 3000' command is executed.
+15:49:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:49:44 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:49:44 INFO  : Context for 'APU' is selected.
+15:49:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:49:44 INFO  : 'configparams force-mem-access 1' command is executed.
+15:49:44 INFO  : Context for 'APU' is selected.
+15:49:44 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:49:45 INFO  : 'ps7_init' command is executed.
+15:49:45 INFO  : 'ps7_post_config' command is executed.
+15:49:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:49:45 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:49:45 INFO  : 'configparams force-mem-access 0' command is executed.
+15:49:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:52:22 INFO  : Disconnected from the channel tcfchan#5.
+15:52:22 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+15:52:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:47 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+15:52:47 INFO  : 'jtag frequency' command is executed.
+15:52:48 INFO  : Context for 'APU' is selected.
+15:52:48 INFO  : System reset is completed.
+15:52:51 INFO  : 'after 3000' command is executed.
+15:52:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+15:52:55 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+15:52:55 INFO  : Context for 'APU' is selected.
+15:52:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+15:52:55 INFO  : 'configparams force-mem-access 1' command is executed.
+15:52:55 INFO  : Context for 'APU' is selected.
+15:52:55 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+15:52:55 INFO  : 'ps7_init' command is executed.
+15:52:56 INFO  : 'ps7_post_config' command is executed.
+15:52:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:52:56 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:52:56 INFO  : 'configparams force-mem-access 0' command is executed.
+15:52:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:17:47 INFO  : Disconnected from the channel tcfchan#6.
+16:17:47 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+16:18:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:24 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+16:18:24 INFO  : 'jtag frequency' command is executed.
+16:18:24 INFO  : Context for 'APU' is selected.
+16:18:24 INFO  : System reset is completed.
+16:18:27 INFO  : 'after 3000' command is executed.
+16:18:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+16:18:31 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+16:18:31 INFO  : Context for 'APU' is selected.
+16:18:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+16:18:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:18:31 INFO  : Context for 'APU' is selected.
+16:18:31 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+16:18:32 INFO  : 'ps7_init' command is executed.
+16:18:32 INFO  : 'ps7_post_config' command is executed.
+16:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:18:32 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:18:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:18:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:24:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\temp_xsdb_launch_script.tcl
+10:24:28 INFO  : XSCT server has started successfully.
+10:24:28 INFO  : plnx-install-location is set to ''
+10:24:28 INFO  : Successfully done setting XSCT server connection channel  
+10:24:28 INFO  : Successfully done setting workspace for the tool. 
+10:24:33 INFO  : Platform repository initialization has completed.
+10:24:34 INFO  : Registering command handlers for Vitis TCF services
+10:24:37 INFO  : Successfully done query RDI_DATADIR 
+10:25:15 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:25:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:25:43 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:25:43 INFO  : 'jtag frequency' command is executed.
+10:25:43 INFO  : Context for 'APU' is selected.
+10:25:43 INFO  : System reset is completed.
+10:25:46 INFO  : 'after 3000' command is executed.
+10:25:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:25:54 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:25:54 INFO  : Context for 'APU' is selected.
+10:25:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:25:54 INFO  : 'configparams force-mem-access 1' command is executed.
+10:25:54 INFO  : Context for 'APU' is selected.
+10:25:54 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:25:54 INFO  : 'ps7_init' command is executed.
+10:25:54 INFO  : 'ps7_post_config' command is executed.
+10:25:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:25:55 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:25:55 INFO  : 'configparams force-mem-access 0' command is executed.
+10:25:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:30:03 INFO  : Disconnected from the channel tcfchan#1.
+10:30:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:24 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:30:24 INFO  : 'jtag frequency' command is executed.
+10:30:24 INFO  : Context for 'APU' is selected.
+10:30:24 INFO  : System reset is completed.
+10:30:27 INFO  : 'after 3000' command is executed.
+10:30:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:30:32 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:30:32 INFO  : Context for 'APU' is selected.
+10:30:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:30:35 INFO  : 'configparams force-mem-access 1' command is executed.
+10:30:35 INFO  : Context for 'APU' is selected.
+10:30:35 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:30:35 INFO  : 'ps7_init' command is executed.
+10:30:35 INFO  : 'ps7_post_config' command is executed.
+10:30:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:35 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:30:35 INFO  : 'configparams force-mem-access 0' command is executed.
+10:30:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:32:00 INFO  : Disconnected from the channel tcfchan#2.
+10:32:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:19 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:32:19 INFO  : 'jtag frequency' command is executed.
+10:32:19 INFO  : Context for 'APU' is selected.
+10:32:19 INFO  : System reset is completed.
+10:32:22 INFO  : 'after 3000' command is executed.
+10:32:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:32:26 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:32:26 INFO  : Context for 'APU' is selected.
+10:32:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:32:29 INFO  : 'configparams force-mem-access 1' command is executed.
+10:32:29 INFO  : Context for 'APU' is selected.
+10:32:29 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:32:29 INFO  : 'ps7_init' command is executed.
+10:32:29 INFO  : 'ps7_post_config' command is executed.
+10:32:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:32:30 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:32:30 INFO  : 'configparams force-mem-access 0' command is executed.
+10:32:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:36:16 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:36:23 INFO  : Disconnected from the channel tcfchan#3.
+10:36:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:43 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:36:43 INFO  : 'jtag frequency' command is executed.
+10:36:43 INFO  : Context for 'APU' is selected.
+10:36:43 INFO  : System reset is completed.
+10:36:46 INFO  : 'after 3000' command is executed.
+10:36:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:36:50 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:36:50 INFO  : Context for 'APU' is selected.
+10:36:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:36:53 INFO  : 'configparams force-mem-access 1' command is executed.
+10:36:53 INFO  : Context for 'APU' is selected.
+10:36:53 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:36:53 INFO  : 'ps7_init' command is executed.
+10:36:53 INFO  : 'ps7_post_config' command is executed.
+10:36:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:36:54 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:36:54 INFO  : 'configparams force-mem-access 0' command is executed.
+10:36:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:39:40 INFO  : Disconnected from the channel tcfchan#4.
+10:41:20 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+10:41:20 INFO  : Result from executing command 'getPlatforms': testbench_bd_wrapper|C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm
+10:41:21 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:41:25 INFO  : The hardware specfication used by project 'arm' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+10:41:25 INFO  : The file 'C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\arm\_ide\bitstream\testbench_bd_wrapper.bit' stored in project is removed.
+10:41:26 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\arm\_ide\bitstream' in project 'arm'.
+10:41:26 INFO  : The file 'C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\arm\_ide\psinit\ps7_init.tcl' stored in project is removed.
+10:41:33 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\arm\_ide\psinit' in project 'arm'.
+10:41:56 INFO  : Hardware specification for platform project 'testbench_bd_wrapper' is updated.
+10:42:18 INFO  : Result from executing command 'getProjects': testbench_bd_wrapper
+10:42:18 INFO  : Result from executing command 'getPlatforms': testbench_bd_wrapper|C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm
+10:42:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:46 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:42:46 INFO  : 'jtag frequency' command is executed.
+10:42:46 INFO  : Context for 'APU' is selected.
+10:42:46 INFO  : System reset is completed.
+10:42:49 INFO  : 'after 3000' command is executed.
+10:42:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:42:53 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:42:53 INFO  : Context for 'APU' is selected.
+10:42:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:42:53 INFO  : 'configparams force-mem-access 1' command is executed.
+10:42:54 INFO  : Context for 'APU' is selected.
+10:42:54 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:42:54 INFO  : 'ps7_init' command is executed.
+10:42:54 INFO  : 'ps7_post_config' command is executed.
+10:42:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:54 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:42:54 INFO  : 'configparams force-mem-access 0' command is executed.
+10:42:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:44:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\lnis\Documents\GF12_Testbed\projects\zybo\vitis\temp_xsdb_launch_script.tcl
+10:44:52 INFO  : XSCT server has started successfully.
+10:44:52 INFO  : plnx-install-location is set to ''
+10:44:52 INFO  : Successfully done setting XSCT server connection channel  
+10:44:52 INFO  : Successfully done setting workspace for the tool. 
+10:44:56 INFO  : Platform repository initialization has completed.
+10:44:57 INFO  : Successfully done query RDI_DATADIR 
+10:44:57 INFO  : Registering command handlers for Vitis TCF services
+10:45:14 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:45:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:39 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:45:39 INFO  : 'jtag frequency' command is executed.
+10:45:39 INFO  : Context for 'APU' is selected.
+10:45:39 INFO  : System reset is completed.
+10:45:42 INFO  : 'after 3000' command is executed.
+10:45:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:45:47 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:45:47 INFO  : Context for 'APU' is selected.
+10:45:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:45:47 INFO  : 'configparams force-mem-access 1' command is executed.
+10:45:47 INFO  : Context for 'APU' is selected.
+10:45:47 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:45:47 INFO  : 'ps7_init' command is executed.
+10:45:47 INFO  : 'ps7_post_config' command is executed.
+10:45:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:48 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:45:48 INFO  : 'configparams force-mem-access 0' command is executed.
+10:45:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:47:09 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:47:11 INFO  : Disconnected from the channel tcfchan#1.
+10:47:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:47:46 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:47:46 INFO  : 'jtag frequency' command is executed.
+10:47:46 INFO  : Context for 'APU' is selected.
+10:47:46 INFO  : System reset is completed.
+10:47:49 INFO  : 'after 3000' command is executed.
+10:47:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:47:53 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:47:53 INFO  : Context for 'APU' is selected.
+10:47:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:47:55 INFO  : 'configparams force-mem-access 1' command is executed.
+10:47:55 INFO  : Context for 'APU' is selected.
+10:47:55 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:47:56 INFO  : 'ps7_init' command is executed.
+10:47:56 INFO  : 'ps7_post_config' command is executed.
+10:47:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:56 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:47:56 INFO  : 'configparams force-mem-access 0' command is executed.
+10:47:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:50:01 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:50:03 INFO  : Disconnected from the channel tcfchan#2.
+10:50:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:50:22 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:50:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:47 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:50:47 INFO  : 'jtag frequency' command is executed.
+10:50:47 INFO  : Context for 'APU' is selected.
+10:50:47 INFO  : System reset is completed.
+10:50:50 INFO  : 'after 3000' command is executed.
+10:50:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:50:55 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:50:55 INFO  : Context for 'APU' is selected.
+10:50:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:50:57 INFO  : 'configparams force-mem-access 1' command is executed.
+10:50:57 INFO  : Context for 'APU' is selected.
+10:50:57 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:50:57 INFO  : 'ps7_init' command is executed.
+10:50:57 INFO  : 'ps7_post_config' command is executed.
+10:50:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:50:58 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:50:58 INFO  : 'configparams force-mem-access 0' command is executed.
+10:50:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:52:14 INFO  : Disconnected from the channel tcfchan#3.
+10:52:15 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:52:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:52:39 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:52:39 INFO  : 'jtag frequency' command is executed.
+10:52:39 INFO  : Context for 'APU' is selected.
+10:52:40 INFO  : System reset is completed.
+10:52:43 INFO  : 'after 3000' command is executed.
+10:52:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:52:47 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:52:47 INFO  : Context for 'APU' is selected.
+10:52:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:52:47 INFO  : 'configparams force-mem-access 1' command is executed.
+10:52:47 INFO  : Context for 'APU' is selected.
+10:52:47 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:52:47 INFO  : 'ps7_init' command is executed.
+10:52:47 INFO  : 'ps7_post_config' command is executed.
+10:52:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:52:48 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:52:48 INFO  : 'configparams force-mem-access 0' command is executed.
+10:52:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:53:49 INFO  : Disconnected from the channel tcfchan#4.
+10:53:50 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:54:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:54:39 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:54:39 INFO  : 'jtag frequency' command is executed.
+10:54:39 INFO  : Context for 'APU' is selected.
+10:54:39 INFO  : System reset is completed.
+10:54:42 INFO  : 'after 3000' command is executed.
+10:54:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:54:46 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:54:47 INFO  : Context for 'APU' is selected.
+10:54:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:54:47 INFO  : 'configparams force-mem-access 1' command is executed.
+10:54:47 INFO  : Context for 'APU' is selected.
+10:54:47 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:54:47 INFO  : 'ps7_init' command is executed.
+10:54:47 INFO  : 'ps7_post_config' command is executed.
+10:54:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:54:47 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:54:47 INFO  : 'configparams force-mem-access 0' command is executed.
+10:54:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:56:46 INFO  : Disconnected from the channel tcfchan#5.
+10:56:46 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:56:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:57:11 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:57:11 INFO  : 'jtag frequency' command is executed.
+10:57:11 INFO  : Context for 'APU' is selected.
+10:57:11 INFO  : System reset is completed.
+10:57:14 INFO  : 'after 3000' command is executed.
+10:57:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:57:19 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:57:19 INFO  : Context for 'APU' is selected.
+10:57:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:57:19 INFO  : 'configparams force-mem-access 1' command is executed.
+10:57:19 INFO  : Context for 'APU' is selected.
+10:57:19 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:57:19 INFO  : 'ps7_init' command is executed.
+10:57:19 INFO  : 'ps7_post_config' command is executed.
+10:57:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:57:20 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:57:20 INFO  : 'configparams force-mem-access 0' command is executed.
+10:57:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:58:13 INFO  : Disconnected from the channel tcfchan#6.
+10:58:13 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+10:58:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:36 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+10:58:36 INFO  : 'jtag frequency' command is executed.
+10:58:36 INFO  : Context for 'APU' is selected.
+10:58:36 INFO  : System reset is completed.
+10:58:39 INFO  : 'after 3000' command is executed.
+10:58:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+10:58:44 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+10:58:44 INFO  : Context for 'APU' is selected.
+10:58:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+10:58:44 INFO  : 'configparams force-mem-access 1' command is executed.
+10:58:44 INFO  : Context for 'APU' is selected.
+10:58:44 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+10:58:44 INFO  : 'ps7_init' command is executed.
+10:58:44 INFO  : 'ps7_post_config' command is executed.
+10:58:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:58:45 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:58:45 INFO  : 'configparams force-mem-access 0' command is executed.
+10:58:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:26:53 INFO  : Disconnected from the channel tcfchan#7.
+11:26:54 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+11:27:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:32 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+11:27:32 INFO  : 'jtag frequency' command is executed.
+11:27:32 INFO  : Context for 'APU' is selected.
+11:27:32 INFO  : System reset is completed.
+11:27:35 INFO  : 'after 3000' command is executed.
+11:27:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+11:27:39 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+11:27:39 INFO  : Context for 'APU' is selected.
+11:27:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+11:27:39 INFO  : 'configparams force-mem-access 1' command is executed.
+11:27:39 INFO  : Context for 'APU' is selected.
+11:27:39 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+11:27:40 INFO  : 'ps7_init' command is executed.
+11:27:40 INFO  : 'ps7_post_config' command is executed.
+11:27:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:40 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:27:40 INFO  : 'configparams force-mem-access 0' command is executed.
+11:27:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:52 INFO  : Disconnected from the channel tcfchan#8.
+11:39:52 INFO  : Checking for BSP changes to sync application flags for project 'arm'...
+11:40:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:19 INFO  : Jtag cable 'Digilent Zybo 210279653775A' is selected.
+11:40:19 INFO  : 'jtag frequency' command is executed.
+11:40:19 INFO  : Context for 'APU' is selected.
+11:40:19 INFO  : System reset is completed.
+11:40:22 INFO  : 'after 3000' command is executed.
+11:40:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}' command is executed.
+11:40:27 INFO  : FPGA configured successfully with bitstream "C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit"
+11:40:27 INFO  : Context for 'APU' is selected.
+11:40:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa'.
+11:40:27 INFO  : 'configparams force-mem-access 1' command is executed.
+11:40:27 INFO  : Context for 'APU' is selected.
+11:40:27 INFO  : Sourcing of 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl' is done.
+11:40:27 INFO  : 'ps7_init' command is executed.
+11:40:27 INFO  : 'ps7_post_config' command is executed.
+11:40:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:27 INFO  : The application 'C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:40:28 INFO  : 'configparams force-mem-access 0' command is executed.
+11:40:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279653775A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279653775A-13722093-0"}
+fpga -file C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/bitstream/testbench_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/hw/testbench_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm/Debug/arm.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:26:51 INFO  : Disconnected from the channel tcfchan#9.

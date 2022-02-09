@@ -1,0 +1,15 @@
+2021-06-02T10:41:33.73443900255-10:41:33 **** Build of configuration Debug for project arm_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 65039 C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm domain_ps7_cortexa9_0 C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm_system/Debug/system.bif
+000-xpfm path is not valid
+000-    invoked from within
+000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{::scw::generate_bif -xpfm C:/Users/apond/Documents/zybo/vitis/testbench_bd_wrapper/export/testbench_bd_wrapper/testbench_bd_wrapper.xpfm -domains domain_ps7_cortexa9_0 -bifpath C:/Users/lnis/Documents/GF12_Testbed/projects/zybo/vitis/arm_system/Debug/system.bif}}}"
+000-    (procedure "::tcf::send_command" line 4)
+000-    invoked from within
+000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "::scw::generate_bif $GENERATE_BIF_ARGS"]"
+000-    (file "C:/Xilinx/Vitis/2020.1\scripts\vitis\util\generate_system_bif.tcl" line 25)
+000/arm_system/Debug0-1-1make: *** [makefile:38: package] Error 12-make: *** [makefile:38: package] Error 1
+00255-
+10:41:36 Build Finished (took 2s.262ms)
+

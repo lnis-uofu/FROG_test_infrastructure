@@ -1,0 +1,206 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 13 17:16:06 2021
+# Process ID: 4652
+# Current directory: C:/Users/lnis/Documents/GF12_Testbed
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16372 C:\Users\lnis\Documents\GF12_Testbed\gf12_testbed.xpr
+# Log file: C:/Users/lnis/Documents/GF12_Testbed/vivado.log
+# Journal file: C:/Users/lnis/Documents/GF12_Testbed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.xpr
+update_compile_order -fileset sources_1
+update_module_reference testbench_bd_test_top_0_2
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+current_hw_device [get_hw_devices xczu4_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu4_0] 0]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu4_0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+close_hw_manager
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+current_hw_device [get_hw_devices xczu4_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu4_0] 0]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu4_0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu4_0]
+set_property PROGRAM.FILE {C:/Users/lnis/Documents/GF12_Testbed/gf12_testbed.runs/impl_1/testbench_bd_wrapper.bit} [get_hw_devices xczu4_0]
+program_hw_devices [get_hw_devices xczu4_0]
+refresh_hw_device [lindex [get_hw_devices xczu4_0] 0]
+update_module_reference testbench_bd_test_top_0_2
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

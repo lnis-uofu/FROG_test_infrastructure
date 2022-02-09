@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../gf12_testbed.srcs/sources_1/bd/testbench_bd/ipshared/ec67/hdl" --include "../../../../../gf12_testbed.srcs/sources_1/bd/testbench_bd/ipshared/e257/hdl" --include "C:/Xilinx/Vivado/2020.1/data/xilinx_vip/include" \
+"bitstream_loader_tb_func_synth.v" \
+"../../../../../gf12_testbed.srcs/sources_1/new/bitstream_loader.v" \
+"../../../../../gf12_testbed.srcs/sim_1/new/bitstream_loader_tb.v" \
+
+# Do not sort compile order
+nosort

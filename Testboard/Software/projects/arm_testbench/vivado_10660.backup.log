@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jun  2 17:41:10 2021
+# Process ID: 10660
+# Current directory: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20252 C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.xpr
+# Log file: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/vivado.log
+# Journal file: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1047.820 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property board_part trenz.biz:te0803_4eg_1e_tebf0808:part0:2.0 [current_project]
+WARNING: [Project 1-153] The current project device 'xczu2eg-sfvc784-1-e' does not match with the device on the 'TRENZ.BIZ:TE0803_4EG_1E_TEBF0808:PART0:2.0' board part. A device change to match the device on 'TRENZ.BIZ:TE0803_4EG_1E_TEBF0808:PART0:2.0' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to zynquplus (xczu4eg-sfvc784-1-e)
+open_bd_design {C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd}
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Successfully read diagram <arm_tb_bd> from BD file <C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1087.094 ; gain = 39.273
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 [get_ips  arm_tb_bd_zynq_ultra_ps_e_0_2] -log ip_upgrade.log
+Upgrading 'C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd'
+Board is trenz.biz:te0803_4eg_1e_tebf0808:part0:2.0
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-3420] Updated arm_tb_bd_zynq_ultra_ps_e_0_2 to use current project options
+WARNING: [IP_Flow 19-4706] Upgraded port 'emio_gpio_i' width 95 differs from original width 5
+WARNING: [IP_Flow 19-4706] Upgraded port 'emio_gpio_o' width 95 differs from original width 5
+WARNING: [IP_Flow 19-4706] Upgraded port 'emio_gpio_t' width 95 differs from original width 5
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'arm_tb_bd_zynq_ultra_ps_e_0_2'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'arm_tb_bd_zynq_ultra_ps_e_0_2' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+Wrote  : <C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ui/bd_fc40cb70.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1270.328 ; gain = 144.172
+export_ip_user_files -of_objects [get_ips arm_tb_bd_zynq_ultra_ps_e_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd]
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/synth/arm_tb_bd.v
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/sim/arm_tb_bd.v
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hdl/arm_tb_bd_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.3-0] arm_tb_bd_zynq_ultra_ps_e_0_2: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+Exporting to file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hw_handoff/arm_tb_bd.hwh
+Generated Block Design Tcl file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hw_handoff/arm_tb_bd_bd.tcl
+Generated Hardware Definition File C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/synth/arm_tb_bd.hwdef
+generate_target: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1412.672 ; gain = 140.746
+catch { config_ip_cache -export [get_ips -all arm_tb_bd_zynq_ultra_ps_e_0_2] }
+export_ip_user_files -of_objects [get_files C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd]
+launch_runs arm_tb_bd_zynq_ultra_ps_e_0_2_synth_1 -jobs 12
+[Wed Jun  2 17:46:07 2021] Launched arm_tb_bd_zynq_ultra_ps_e_0_2_synth_1...
+Run output will be captured here: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_zynq_ultra_ps_e_0_2_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd] -directory C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.ip_user_files -ipstatic_source_dir C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/modelsim} {questa=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/questa} {riviera=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/riviera} {activehdl=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_emio_gpio_o] [get_bd_ports emio_gpio_o]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
+delete_bd_objs [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property -dict [list CONFIG.C_GPIO_WIDTH {5}] [get_bd_cells axi_gpio_0]
+set_property location {2 745 -559} [get_bd_cells axi_gpio_0]
+set_property location {1 614 -542} [get_bd_cells axi_gpio_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property -dict [list CONFIG.C_GPIO_WIDTH {32}] [get_bd_cells axi_gpio_0]
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl /axi_gpio_0/GPIO
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /axi_gpio_0/GPIO. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+ERROR: [BD 41-2168] Errors found in procedure apply_rule:
+
+
+INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:axi4 was not applied to object S_AXI
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]'
+ERROR: [Common 17-39] 'apply_bd_automation' failed due to earlier errors.
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]'
+INFO: [Common 17-17] undo 'startgroup'
+delete_bd_objs [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/dp_s_axis_audio_clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_lpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl /axi_gpio_0/GPIO
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /axi_gpio_0/GPIO. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+endgroup
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {5}] [get_bd_cells axi_gpio_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+Wrote  : <C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ui/bd_fc40cb70.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/synth/arm_tb_bd.v
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/sim/arm_tb_bd.v
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hdl/arm_tb_bd_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.3-0] arm_tb_bd_zynq_ultra_ps_e_0_3: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXIS_AUDIO'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXIS_MIXED_AUDIO'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_99M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_auto_pc_0/arm_tb_bd_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hw_handoff/arm_tb_bd.hwh
+Generated Block Design Tcl file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hw_handoff/arm_tb_bd_bd.tcl
+Generated Hardware Definition File C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/synth/arm_tb_bd.hwdef
+[Thu Jun  3 07:49:57 2021] Launched arm_tb_bd_rst_ps8_0_99M_0_synth_1, arm_tb_bd_axi_gpio_0_1_synth_1, arm_tb_bd_auto_pc_0_synth_1, arm_tb_bd_zynq_ultra_ps_e_0_3_synth_1, synth_1...
+Run output will be captured here:
+arm_tb_bd_rst_ps8_0_99M_0_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_rst_ps8_0_99M_0_synth_1/runme.log
+arm_tb_bd_axi_gpio_0_1_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_axi_gpio_0_1_synth_1/runme.log
+arm_tb_bd_auto_pc_0_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_auto_pc_0_synth_1/runme.log
+arm_tb_bd_zynq_ultra_ps_e_0_3_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_zynq_ultra_ps_e_0_3_synth_1/runme.log
+synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/synth_1/runme.log
+[Thu Jun  3 07:49:57 2021] Launched impl_1...
+Run output will be captured here: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1522.195 ; gain = 42.414
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jun  3 07:55:42 2021] Launched synth_1...
+Run output will be captured here: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/synth_1/runme.log
+[Thu Jun  3 07:55:42 2021] Launched impl_1...
+Run output will be captured here: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/runme.log
+set_property pfm_name {} [get_files -all {C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_tb_bd_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_tb_bd_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 1 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_tb_bd_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2651.938 ; gain = 0.000
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd}
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
+delete_bd_objs [get_bd_cells zynq_ultra_ps_e_0]
+set_property board_part trenz.biz:te0803_2eg_1e:part0:1.0 [current_project]
+WARNING: [Project 1-153] The current project device 'xczu4eg-sfvc784-1-e' does not match with the device on the 'TRENZ.BIZ:TE0803_2EG_1E:PART0:1.0' board part. A device change to match the device on 'TRENZ.BIZ:TE0803_2EG_1E:PART0:1.0' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to zynquplus (xczu2eg-sfvc784-1-e)
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {arm_tb_bd_rst_ps8_0_99M_0 arm_tb_bd_ps8_0_axi_periph_1 arm_tb_bd_axi_gpio_0_1}] -log ip_upgrade.log
+Upgrading 'C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd'
+INFO: [IP_Flow 19-3420] Updated arm_tb_bd_axi_gpio_0_1 to use current project options
+INFO: [IP_Flow 19-3420] Updated arm_tb_bd_ps8_0_axi_periph_1 to use current project options
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [IP_Flow 19-3420] Updated arm_tb_bd_rst_ps8_0_99M_0 to use current project options
+WARNING: [BD 41-597] NET <zynq_ultra_ps_e_0_pl_clk0> has no source
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+Wrote  : <C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ui/bd_fc40cb70.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {arm_tb_bd_rst_ps8_0_99M_0 arm_tb_bd_ps8_0_axi_periph_1 arm_tb_bd_axi_gpio_0_1}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_gpio_0/s_axi_aclk
+/ps8_0_axi_periph/ACLK
+/ps8_0_axi_periph/S00_ACLK
+/ps8_0_axi_periph/M00_ACLK
+/rst_ps8_0_99M/slowest_sync_clk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_gpio_0/s_axi_aclk]
+INFO: [BD 5-455] Automation on '/ps8_0_axi_periph/ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps8_0_axi_periph/M00_ACLK' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_pins rst_ps8_0_99M/ext_reset_in]
+INFO: [BD 5-455] Automation on '/rst_ps8_0_99M/slowest_sync_clk' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+endgroup
+save_bd_design
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+Wrote  : <C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ui/bd_fc40cb70.ui> 
+generate_target all [get_files  C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd]
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+Wrote  : <C:\Users\apond\Documents\GF12_Testbed\projects\arm_testbench\arm_testbench.srcs\sources_1\bd\arm_tb_bd\arm_tb_bd.bd> 
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/synth/arm_tb_bd.v
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/sim/arm_tb_bd.v
+VHDL Output written to : C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hdl/arm_tb_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_99M .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.3-0] arm_tb_bd_zynq_ultra_ps_e_0_5: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/ip/arm_tb_bd_auto_pc_0/arm_tb_bd_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hw_handoff/arm_tb_bd.hwh
+Generated Block Design Tcl file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/hw_handoff/arm_tb_bd_bd.tcl
+Generated Hardware Definition File C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/synth/arm_tb_bd.hwdef
+generate_target: Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 2651.938 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all arm_tb_bd_axi_gpio_0_1] }
+catch { config_ip_cache -export [get_ips -all arm_tb_bd_rst_ps8_0_99M_0] }
+catch { config_ip_cache -export [get_ips -all arm_tb_bd_zynq_ultra_ps_e_0_5] }
+catch { config_ip_cache -export [get_ips -all arm_tb_bd_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd]
+launch_runs arm_tb_bd_axi_gpio_0_1_synth_1 arm_tb_bd_rst_ps8_0_99M_0_synth_1 arm_tb_bd_zynq_ultra_ps_e_0_5_synth_1 arm_tb_bd_auto_pc_0_synth_1 -jobs 12
+[Thu Jun  3 08:48:19 2021] Launched arm_tb_bd_axi_gpio_0_1_synth_1, arm_tb_bd_rst_ps8_0_99M_0_synth_1, arm_tb_bd_zynq_ultra_ps_e_0_5_synth_1, arm_tb_bd_auto_pc_0_synth_1...
+Run output will be captured here:
+arm_tb_bd_axi_gpio_0_1_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_axi_gpio_0_1_synth_1/runme.log
+arm_tb_bd_rst_ps8_0_99M_0_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_rst_ps8_0_99M_0_synth_1/runme.log
+arm_tb_bd_zynq_ultra_ps_e_0_5_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_zynq_ultra_ps_e_0_5_synth_1/runme.log
+arm_tb_bd_auto_pc_0_synth_1: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/arm_tb_bd_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd] -directory C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.ip_user_files -ipstatic_source_dir C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/modelsim} {questa=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/questa} {riviera=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/riviera} {activehdl=C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jun  3 08:49:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/synth_1/runme.log
+[Thu Jun  3 08:49:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.runs/impl_1/runme.log
+set_property pfm_name {} [get_files -all {C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_testbench.srcs/sources_1/bd/arm_tb_bd/arm_tb_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_tb_bd_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_tb_bd_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/apond/Documents/GF12_Testbed/projects/arm_testbench/arm_tb_bd_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2651.938 ; gain = 0.000
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  3 09:16:01 2021...

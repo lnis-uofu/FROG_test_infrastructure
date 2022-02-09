@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/GF12_Testbed/src/design/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/GF12_Testbed/src/design/reset_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/GF12_Testbed/src/design/scan_chain_freq_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_chain_freq_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/GF12_Testbed/src/sim/scan_chain_freq_test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_chain_freq_test_tb

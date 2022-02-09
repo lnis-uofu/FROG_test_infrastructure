@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-09-30T00:25:29Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.641,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "DaughterBoard"
+        },
+        "Owner": "Nathan Page <nathan.page@utah.edu>",
+        "Size": {
+            "X": 74,
+            "Y": 79
+        }
+    }
+}

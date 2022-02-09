@@ -1,0 +1,79 @@
+PCAD Importer Log
+Project : TEBF0808ASCII.PrjPcb
+
+Section : C:\Users\Nathan\Documents\GitHub\POSHTestbed\AP-TEBF0808-04\TEBF0808ASCII.PCB
+    Section : Load Messages
+        Warning - 1 : Skipping Token netNameRef On Line 65979
+        Warning - 1 : Skipping Token netNameRef On Line 69413
+        Warning - 1 : Skipping Token netNameRef On Line 71306
+        Warning - 1 : Skipping Token netNameRef On Line 72456
+        Warning - 1 : Skipping Token netNameRef On Line 72477
+        Warning - 1 : Skipping Token netNameRef On Line 73624
+        Warning - 1 : Skipping Token netNameRef On Line 73646
+        Warning - 1 : Skipping Token netNameRef On Line 73667
+        Warning - 1 : Skipping Token netNameRef On Line 74402
+        Warning - 1 : Skipping Token netNameRef On Line 74423
+        Warning - 1 : Skipping Token netNameRef On Line 75226
+        Warning - 1 : Skipping Token netNameRef On Line 75244
+        Warning - 1 : Skipping Token netNameRef On Line 75282
+        Warning - 1 : Skipping Token netNameRef On Line 75298
+        Warning - 1 : Skipping Token netNameRef On Line 75324
+        Warning - 1 : Skipping Token netNameRef On Line 75352
+        Warning - 1 : Skipping Token netNameRef On Line 75386
+        Warning - 1 : Skipping Token netNameRef On Line 75403
+        Warning - 1 : Skipping Token netNameRef On Line 75432
+        Warning - 1 : Skipping Token netNameRef On Line 75454
+        Warning - 1 : Skipping Token netNameRef On Line 75487
+        Warning - 1 : Skipping Token netNameRef On Line 75507
+        Warning - 1 : Skipping Token netNameRef On Line 75550
+        Warning - 1 : Skipping Token netNameRef On Line 75574
+        Warning - 1 : Skipping Token netNameRef On Line 75600
+        Warning - 1 : Skipping Token netNameRef On Line 75648
+        Warning - 1 : Skipping Token netNameRef On Line 75667
+    EndSection
+
+    Section : Import Messages
+        Warning - 0 : PCAD Pattern Graphics [610112249221][Primary] associated with PCAD Component [610112249221] has been renamed to PCB FootPrint [610112249221_610112249221(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [610112249221][Primary] associated with PCAD Component [610112249221] has been renamed to PCB FootPrint [610112249221_610112249221(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [67800-5005][Primary] associated with PCAD Component [67800-5005] has been renamed to PCB FootPrint [67800-5005_67800-5005(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [chipLED_0603_Green][Primary] associated with PCAD Component [chipLED_0603_Green] has been renamed to PCB FootPrint [chipLED_0603_Green_chipLED_0603_Green(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_RED][Primary] associated with PCAD Component [LEDC1006X25N_RED] has been renamed to PCB FootPrint [LEDC1006X25N_RED_LEDC1006X25N_RED(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [chipLED_0603_Green][Primary] associated with PCAD Component [chipLED_0603_Green] has been renamed to PCB FootPrint [chipLED_0603_Green_chipLED_0603_Green(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_RED][Primary] associated with PCAD Component [LEDC1006X25N_RED] has been renamed to PCB FootPrint [LEDC1006X25N_RED_LEDC1006X25N_RED(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [BGA169C50P14X28_1400X1800X809D][Primary] associated with PCAD Component [BGA169C50P14X28_1400X1800X809D] has been renamed to PCB FootPrint [BGA169C50P14X28_1400X1800X809D_BGA169C50P14X28_1400X1800X809D(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [UEC5-019-1-X-D-RA-1-A][Primary] associated with PCAD Component [UEC5-019-1-X-D-RA-1-A] has been renamed to PCB FootPrint [UEC5-019-1-X-D-RA-1-A_UEC5-019-1-X-D-RA-1-A(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [UCC8-010-1-X-S-1-A][Primary] associated with PCAD Component [UCC8-010-1-X-S-1-A] has been renamed to PCB FootPrint [UCC8-010-1-X-S-1-A_UCC8-010-1-X-S-1-A(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [8470-2-2-X][Primary] associated with PCAD Component [8470-2-2-X] has been renamed to PCB FootPrint [8470-2-2-X_8470-2-2-X(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_GREEN][Primary] associated with PCAD Component [LEDC1006X25N_GREEN] has been renamed to PCB FootPrint [LEDC1006X25N_GREEN_LEDC1006X25N_GREEN(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_RED][Primary] associated with PCAD Component [LEDC1006X25N_RED] has been renamed to PCB FootPrint [LEDC1006X25N_RED_LEDC1006X25N_RED(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_GREEN][Primary] associated with PCAD Component [LEDC1006X25N_GREEN] has been renamed to PCB FootPrint [LEDC1006X25N_GREEN_LEDC1006X25N_GREEN(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [47053-1000][Primary] associated with PCAD Component [47053-1000] has been renamed to PCB FootPrint [47053-1000_47053-1000(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [104031-0811][Primary] associated with PCAD Component [104031-0811] has been renamed to PCB FootPrint [104031-0811_104031-0811(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [TE0790-Base][Primary] associated with PCAD Component [TE0790-Base] has been renamed to PCB FootPrint [TE0790-Base_TE0790-Base(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FIDU-DOT - small][Primary] associated with PCAD Component [FIDU-DOT_-_small] has been renamed to PCB FootPrint [FIDU-DOT - small_FIDU-DOT_-_small(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FIDU-DOT - small][Primary] associated with PCAD Component [FIDU-DOT_-_small] has been renamed to PCB FootPrint [FIDU-DOT - small_FIDU-DOT_-_small(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FIDU-DOT - small][Primary] associated with PCAD Component [FIDU-DOT_-_small] has been renamed to PCB FootPrint [FIDU-DOT - small_FIDU-DOT_-_small(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FIDU-DOT - small][Primary] associated with PCAD Component [FIDU-DOT_-_small] has been renamed to PCB FootPrint [FIDU-DOT - small_FIDU-DOT_-_small(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FIDU-DOT - small][Primary] associated with PCAD Component [FIDU-DOT_-_small] has been renamed to PCB FootPrint [FIDU-DOT - small_FIDU-DOT_-_small(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FIDU-DOT - small][Primary] associated with PCAD Component [FIDU-DOT_-_small] has been renamed to PCB FootPrint [FIDU-DOT - small_FIDU-DOT_-_small(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [PCIe-x16-E.C.Connector][Primary] associated with PCAD Component [PCIe-x16-E.C.Connector] has been renamed to PCB FootPrint [PCIe-x16-E.C.Connector_PCIe-x16-E.C.Connector(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [SDA-44206-0001][Primary] associated with PCAD Component [SDA-44206-0001] has been renamed to PCB FootPrint [SDA-44206-0001_SDA-44206-0001(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [1-2007492-5][Primary] associated with PCAD Component [1-2007492-5] has been renamed to PCB FootPrint [1-2007492-5_1-2007492-5(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [TE0790-Base][Primary] associated with PCAD Component [TE0790-Base] has been renamed to PCB FootPrint [TE0790-Base_TE0790-Base(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [CR1220][Primary] associated with PCAD Component [CR1220] has been renamed to PCB FootPrint [CR1220_CR1220(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [DTSM61N][Primary] associated with PCAD Component [DTSM61N] has been renamed to PCB FootPrint [DTSM61N_DTSM61N(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [DTSM61N][Primary] associated with PCAD Component [DTSM61N] has been renamed to PCB FootPrint [DTSM61N_DTSM61N(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [ASP-134486-01B][Primary] associated with PCAD Component [ASP-134486-01B] has been renamed to PCB FootPrint [ASP-134486-01B_ASP-134486-01B(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [FMC-MM-Single-Base][Primary] associated with PCAD Component [FMC-MM-Single-Base] has been renamed to PCB FootPrint [FMC-MM-Single-Base_FMC-MM-Single-Base(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [7497110616][Primary] associated with PCAD Component [7497110616] has been renamed to PCB FootPrint [7497110616_7497110616(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [INTEL_FP_HDA_9PIN][Primary] associated with PCAD Component [INTEL_FP_HDA_9PIN] has been renamed to PCB FootPrint [INTEL_FP_HDA_9PIN_INTEL_FP_HDA_9PIN(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [UCC8-010-1-X-S-1-A][Primary] associated with PCAD Component [UCC8-010-1-X-S-1-A] has been renamed to PCB FootPrint [UCC8-010-1-X-S-1-A_UCC8-010-1-X-S-1-A(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [UEC5-019-1-X-D-RA-1-A][Primary] associated with PCAD Component [UEC5-019-1-X-D-RA-1-A] has been renamed to PCB FootPrint [UEC5-019-1-X-D-RA-1-A_UEC5-019-1-X-D-RA-1-A(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [694106106102][Primary] associated with PCAD Component [694106106102] has been renamed to PCB FootPrint [694106106102_694106106102(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [104C-TAA0-R][Primary] associated with PCAD Component [104C-TAA0-R] has been renamed to PCB FootPrint [104C-TAA0-R_104C-TAA0-R(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [610112249221][Primary] associated with PCAD Component [610112249221] has been renamed to PCB FootPrint [610112249221_610112249221(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_RED][Primary] associated with PCAD Component [LEDC1006X25N_RED] has been renamed to PCB FootPrint [LEDC1006X25N_RED_LEDC1006X25N_RED(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [47053-1000][Primary] associated with PCAD Component [47053-1000] has been renamed to PCB FootPrint [47053-1000_47053-1000(Primary)].
+        Warning - 0 : PCAD Pattern Graphics [LEDC1006X25N_GREEN][Primary] associated with PCAD Component [LEDC1006X25N_GREEN] has been renamed to PCB FootPrint [LEDC1006X25N_GREEN_LEDC1006X25N_GREEN(Primary)].
+    EndSection
+EndSection

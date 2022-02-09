@@ -1,0 +1,213 @@
+
+*** Running vivado
+    with args -log design_1_scan_chain_freq_test_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_scan_chain_freq_test_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_scan_chain_freq_test_0_0.tcl -notrace
+Command: synth_design -top design_1_scan_chain_freq_test_0_0 -part xczu4eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_scan_chain_freq_test_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu4eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu4eg'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9092
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_scan_chain_freq_test_0_0' [d:/github/GF12_Testbed/projects/scan_chain_freq_test/scan_chain_freq_test.srcs/sources_1/bd/design_1/ip/design_1_scan_chain_freq_test_0_0/synth/design_1_scan_chain_freq_test_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'scan_chain_freq_test' [D:/github/GF12_Testbed/src/design/scan_chain_freq_test.v:22]
+	Parameter SCAN_CLK_DIV_SIZE bound to: 12 - type: integer 
+	Parameter RESET_CYCLE bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/github/GF12_Testbed/src/design/clock_divider.v:23]
+	Parameter CLK_DIVIDER_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/github/GF12_Testbed/src/design/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reset_generator' [D:/github/GF12_Testbed/src/design/reset_generator.v:23]
+	Parameter INITIAL_VALUE bound to: 1 - type: integer 
+	Parameter ACTIVE_CYCLES bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset_generator' (2#1) [D:/github/GF12_Testbed/src/design/reset_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reset_generator__parameterized0' [D:/github/GF12_Testbed/src/design/reset_generator.v:23]
+	Parameter INITIAL_VALUE bound to: 1 - type: integer 
+	Parameter ACTIVE_CYCLES bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset_generator__parameterized0' (2#1) [D:/github/GF12_Testbed/src/design/reset_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scan_chain_freq_test' (3#1) [D:/github/GF12_Testbed/src/design/scan_chain_freq_test.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_scan_chain_freq_test_0_0' (4#1) [d:/github/GF12_Testbed/projects/scan_chain_freq_test/scan_chain_freq_test.srcs/sources_1/bd/design_1/ip/design_1_scan_chain_freq_test_0_0/synth/design_1_scan_chain_freq_test_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu4eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu4eg-sfvc784-1-e
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 728 (col length:96)
+BRAMs: 256 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     2|
+|2     |LUT1   |     4|
+|3     |LUT2   |     2|
+|4     |LUT3   |     5|
+|5     |LUT4   |     2|
+|6     |LUT6   |     2|
+|7     |FDRE   |    21|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+--------------------------------+------+
+|      |Instance                 |Module                          |Cells |
++------+-------------------------+--------------------------------+------+
+|1     |top                      |                                |    38|
+|2     |  inst                   |scan_chain_freq_test            |    37|
+|3     |    logic_clk_divider    |clock_divider                   |    19|
+|4     |    prog_reset_generator |reset_generator                 |     9|
+|5     |    sc_head_generator    |reset_generator__parameterized0 |     9|
++------+-------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.945 ; gain = 518.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1542.945 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1542.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1542.945 ; gain = 518.379
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'D:/github/GF12_Testbed/projects/scan_chain_freq_test/scan_chain_freq_test.runs/design_1_scan_chain_freq_test_0_0_synth_1/design_1_scan_chain_freq_test_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/github/GF12_Testbed/projects/scan_chain_freq_test/scan_chain_freq_test.runs/design_1_scan_chain_freq_test_0_0_synth_1/design_1_scan_chain_freq_test_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_scan_chain_freq_test_0_0_utilization_synth.rpt -pb design_1_scan_chain_freq_test_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 25 13:08:44 2021...

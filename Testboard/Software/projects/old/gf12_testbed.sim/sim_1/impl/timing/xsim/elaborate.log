@@ -1,0 +1,21 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto cb0530c05dbe462db8d47941366094e4 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L xilinx_vip -L simprims_ver -L secureip --snapshot tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'GPIO3_pad' is not connected on this instance [C:/Users/apond/Documents/GF12_Testbed/gf12_testbed.srcs/sim_1/new/tb.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_divider(CLK_DIVIDER_SIZE=2...
+Compiling module xil_defaultlib.reset_generator(INITIAL_VALUE=1,...
+Compiling module xil_defaultlib.reset_generator(INITIAL_VALUE=1,...
+Compiling module xil_defaultlib.clock_divider(CLK_DIVIDER_SIZE=1...
+Compiling module xil_defaultlib.bitstream_loader(BITSTREAM_FILE=...
+Compiling module xil_defaultlib.configuration_manager(BISTREAM_F...
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_time_impl

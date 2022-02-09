@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 14:25:26 On 4/29/2020
+
+Output: Save As/Export Schematic
+Type  : Universal Exporter
+From  : Schematic Document [TEBF0808.schdoc]
+   Generated File[Save As_Export Schematic.sch]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 14:25:26 On 4/29/2020
