@@ -1,4 +1,0 @@
-[submodule "BSP_Packaging"]
-	path = BSP_Packaging
-	https://github.com/bespoke-silicon-group/bsg_packaging
-
