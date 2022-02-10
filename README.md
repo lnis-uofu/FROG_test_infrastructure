@@ -11,7 +11,7 @@ Development tools:
 
 - Eagle 9.6.2 - Download [HERE](http://eagle.autodesk.com/eagle/software-versions/50)
 - AutoCAD 2022 (optional, Drawing tool for wirebonding schematics)  - Download [HERE](https://www.autodesk.com/products/autocad/free-trial)
-- ESP-IDF <Version to confirm> - Download [HERE](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
+- Vivado 2020 - Download [HERE](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2020-3.html)
 
 # Directory description
 
