@@ -20,17 +20,17 @@ A few guidelines for the next Tapeout LNIS intends to do, aswell as a glossary w
 
 - Impedance controlled drawing & Charts
 
-This files describes the controlled impedance tracks on the package, note that it is not being taken advantage of right now ( due to the late effort on packaging ) but it would be beneficial to place critical signal on thoses tracks for next Tapeouts ( clk, pll’s etc, University of Washington would be probably happy to help on that front).
+These files describe the controlled impedance tracks on the package, note that it is not being taken advantage of right now (due to the late effort on packaging) but it would be beneficial to place critical signal on thoses tracks for next Tapeouts ( clk, pll’s etc).
 
 
 # AssemblyFiles
 
+This folder contains all the required files by the Assembly house to realise the chip wirebonding process, which includes:
+
 - Dam & Fill drawing.
-- The wire bonding diagram sent to the assembly house.
-- Package outline drawing (POD)
-- Substrate stackup drawing
-- Gerbers (File Dupplication issue?)
+- The wire bonding diagram.
+- Package outline drawing (POD).
+- Substrate stackup drawing.
+- Gerbers.
+
 - AssemblyHouseDocs is the PDF guideline of the assembly house.
-
-
-TODO: Submodules pointing to BSP352 folder which is the opensource package we've used.
