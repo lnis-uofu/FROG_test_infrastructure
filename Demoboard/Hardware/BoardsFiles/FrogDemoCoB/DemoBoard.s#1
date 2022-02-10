@@ -3164,39 +3164,39 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </packages>
 <symbols>
 <symbol name="BGA352COB">
-<pin name="VDD" x="12.7" y="96.52" length="middle" rot="R270"/>
-<pin name="DVDD" x="22.86" y="96.52" length="middle" rot="R270"/>
-<pin name="GND" x="17.78" y="-5.08" length="middle" rot="R90"/>
-<pin name="GPIO3" x="-5.08" y="71.12" length="middle"/>
-<pin name="GPIO0" x="-5.08" y="78.74" length="middle"/>
-<pin name="RESET" x="-5.08" y="38.1" length="middle"/>
-<pin name="CLK" x="-5.08" y="43.18" length="middle"/>
-<pin name="GPIO4" x="-5.08" y="68.58" length="middle"/>
-<pin name="GPIO5" x="-5.08" y="66.04" length="middle"/>
-<pin name="GPIO2" x="-5.08" y="73.66" length="middle"/>
-<pin name="GPIO1" x="-5.08" y="76.2" length="middle"/>
-<pin name="CCFF_TAIL" x="-5.08" y="12.7" length="middle"/>
-<pin name="GPIO23" x="40.64" y="50.8" length="middle" rot="R180"/>
-<pin name="GPIO11" x="-5.08" y="50.8" length="middle"/>
-<pin name="GPIO21" x="40.64" y="55.88" length="middle" rot="R180"/>
-<pin name="GPIO22" x="40.64" y="53.34" length="middle" rot="R180"/>
-<pin name="GPIO20" x="40.64" y="58.42" length="middle" rot="R180"/>
-<pin name="GPIO10" x="-5.08" y="53.34" length="middle"/>
-<pin name="GPIO8" x="-5.08" y="58.42" length="middle"/>
-<pin name="GPIO9" x="-5.08" y="55.88" length="middle"/>
-<pin name="GPIO18" x="40.64" y="63.5" length="middle" rot="R180"/>
-<pin name="GPIO19" x="40.64" y="60.96" length="middle" rot="R180"/>
-<pin name="GPIO6" x="-5.08" y="63.5" length="middle"/>
-<pin name="GPIO7" x="-5.08" y="60.96" length="middle"/>
-<pin name="CCFF_HEAD" x="-5.08" y="20.32" length="middle"/>
-<pin name="PRESET" x="-5.08" y="35.56" length="middle"/>
-<pin name="GPIO12" x="40.64" y="78.74" length="middle" rot="R180"/>
-<pin name="GPIO16" x="40.64" y="68.58" length="middle" rot="R180"/>
-<pin name="GPIO15" x="40.64" y="71.12" length="middle" rot="R180"/>
-<pin name="GPIO14" x="40.64" y="73.66" length="middle" rot="R180"/>
-<pin name="GPIO13" x="40.64" y="76.2" length="middle" rot="R180"/>
-<pin name="PROG_CLK" x="-5.08" y="40.64" length="middle"/>
-<pin name="GPIO17" x="40.64" y="66.04" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="96.52" visible="pin" length="middle" rot="R270"/>
+<pin name="DVDD" x="22.86" y="96.52" visible="pin" length="middle" rot="R270"/>
+<pin name="GND" x="17.78" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<pin name="GPIO3" x="-5.08" y="71.12" visible="pin" length="middle"/>
+<pin name="GPIO0" x="-5.08" y="78.74" visible="pin" length="middle"/>
+<pin name="RESET" x="-5.08" y="38.1" visible="pin" length="middle"/>
+<pin name="CLK" x="-5.08" y="43.18" visible="pin" length="middle"/>
+<pin name="GPIO4" x="-5.08" y="68.58" visible="pin" length="middle"/>
+<pin name="GPIO5" x="-5.08" y="66.04" visible="pin" length="middle"/>
+<pin name="GPIO2" x="-5.08" y="73.66" visible="pin" length="middle"/>
+<pin name="GPIO1" x="-5.08" y="76.2" visible="pin" length="middle"/>
+<pin name="CCFF_TAIL" x="-5.08" y="12.7" visible="pin" length="middle"/>
+<pin name="GPIO23" x="40.64" y="50.8" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO11" x="-5.08" y="50.8" visible="pin" length="middle"/>
+<pin name="GPIO21" x="40.64" y="55.88" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO22" x="40.64" y="53.34" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO20" x="40.64" y="58.42" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO10" x="-5.08" y="53.34" visible="pin" length="middle"/>
+<pin name="GPIO8" x="-5.08" y="58.42" visible="pin" length="middle"/>
+<pin name="GPIO9" x="-5.08" y="55.88" visible="pin" length="middle"/>
+<pin name="GPIO18" x="40.64" y="63.5" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO19" x="40.64" y="60.96" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO6" x="-5.08" y="63.5" visible="pin" length="middle"/>
+<pin name="GPIO7" x="-5.08" y="60.96" visible="pin" length="middle"/>
+<pin name="CCFF_HEAD" x="-5.08" y="20.32" visible="pin" length="middle"/>
+<pin name="PRESET" x="-5.08" y="35.56" visible="pin" length="middle"/>
+<pin name="GPIO12" x="40.64" y="78.74" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO16" x="40.64" y="68.58" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO15" x="40.64" y="71.12" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO14" x="40.64" y="73.66" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO13" x="40.64" y="76.2" visible="pin" length="middle" rot="R180"/>
+<pin name="PROG_CLK" x="-5.08" y="40.64" visible="pin" length="middle"/>
+<pin name="GPIO17" x="40.64" y="66.04" visible="pin" length="middle" rot="R180"/>
 <wire x1="0" y1="91.44" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
 <wire x1="35.56" y1="91.44" x2="0" y2="91.44" width="0.254" layer="94"/>

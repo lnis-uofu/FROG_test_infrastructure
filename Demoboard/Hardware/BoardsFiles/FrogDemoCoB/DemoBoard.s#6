@@ -6777,6 +6777,8 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="U$77" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$78" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$81" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$82" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$85" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7094,6 +7096,7 @@ month.</text>
 <instance part="U$69" gate="G$1" x="207.01" y="81.28" smashed="yes"/>
 <instance part="U$78" gate="G$1" x="175.26" y="66.04" smashed="yes" rot="R180"/>
 <instance part="U$81" gate="G$1" x="81.28" y="96.52" smashed="yes" rot="R180"/>
+<instance part="U$85" gate="G$1" x="81.28" y="93.98" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7800,13 +7803,6 @@ month.</text>
 <label x="81.28" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TEST_EN" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="IO26/DAC2/A2_9"/>
-<wire x1="78.74" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
-<label x="81.28" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="3V3_EN" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO5"/>
@@ -7857,9 +7853,9 @@ month.</text>
 </net>
 <net name="GPIO7" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="IO17"/>
-<wire x1="78.74" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
-<label x="81.28" y="93.98" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="IO26/DAC2/A2_9"/>
+<wire x1="78.74" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
+<label x="81.28" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -7964,6 +7960,12 @@ month.</text>
 <segment>
 <pinref part="U$81" gate="G$1" pin="P$1"/>
 <pinref part="U3" gate="G$1" pin="IO16"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="U$85" gate="G$1" pin="P$1"/>
+<pinref part="U3" gate="G$1" pin="IO17"/>
 </segment>
 </net>
 </nets>
@@ -8190,6 +8192,7 @@ month.</text>
 <instance part="U$74" gate="G$1" x="170.18" y="78.74" smashed="yes"/>
 <instance part="U$75" gate="G$1" x="170.18" y="71.12" smashed="yes"/>
 <instance part="U$77" gate="G$1" x="220.98" y="76.2" smashed="yes" rot="R180"/>
+<instance part="U$82" gate="G$1" x="170.18" y="76.2" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -8734,13 +8737,6 @@ month.</text>
 <label x="153.67" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TEST_EN" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="TEST_EN"/>
-<wire x1="167.64" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
-<label x="156.21" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CCFF_TAIL"/>
@@ -8919,6 +8915,12 @@ month.</text>
 <segment>
 <pinref part="U$77" gate="G$1" pin="P$1"/>
 <pinref part="U4" gate="G$1" pin="SC_SPYPAD_0"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="U$82" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="TEST_EN"/>
 </segment>
 </net>
 </nets>

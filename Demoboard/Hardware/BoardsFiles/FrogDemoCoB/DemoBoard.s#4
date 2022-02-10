@@ -9056,9 +9056,9 @@ month.</text>
 <label x="75.565" y="130.81" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J6" gate="A" pin="1"/>
-<wire x1="34.29" y1="92.075" x2="32.385" y2="92.075" width="0.1524" layer="91"/>
-<label x="32.385" y="92.075" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="2"/>
+<wire x1="34.29" y1="89.535" x2="32.385" y2="89.535" width="0.1524" layer="91"/>
+<label x="32.385" y="89.535" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO21" class="0">
@@ -9068,9 +9068,9 @@ month.</text>
 <label x="74.93" y="133.35" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J6" gate="A" pin="2"/>
-<wire x1="34.29" y1="89.535" x2="32.385" y2="89.535" width="0.1524" layer="91"/>
-<label x="32.385" y="89.535" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="1"/>
+<wire x1="34.29" y1="92.075" x2="32.385" y2="92.075" width="0.1524" layer="91"/>
+<label x="32.385" y="92.075" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$31" class="0">

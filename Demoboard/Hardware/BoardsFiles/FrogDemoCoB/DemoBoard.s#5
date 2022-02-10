@@ -6690,19 +6690,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="R1" library="Seeed-Resistor" deviceset="SMD-RES-220R-5%-1/10W(0603)" device="" value="220R"/>
 <part name="R3" library="Seeed-Resistor" deviceset="SMD-RES-100R-5%-1/10W(0603)" device="" value="100R"/>
 <part name="R2" library="Seeed-Resistor" deviceset="SMD-RES-10R-5%-1/10W(0603)" device="" value="100R"/>
-<part name="L4O2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="L4O3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="L4O1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="L4O4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="L5O1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="L5O2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="L6O1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="SPY2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="SPY3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="SPY1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="SPYCOUT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="SPYSR" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
-<part name="SPYP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
 <part name="CCTAIL" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
 <part name="U$45" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="R25" library="Seeed-Resistor-2016" deviceset="SMD-RES-51K-5%-1/10W(0603)" device="" value="51K"/>
@@ -6774,11 +6761,24 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="U$69" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$74" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$75" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
-<part name="U$77" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$78" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$81" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$82" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="U$85" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$77" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$86" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$87" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$88" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$89" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$90" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$91" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$92" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$94" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$95" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$96" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$97" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$98" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
+<part name="U$99" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8064,58 +8064,6 @@ month.</text>
 </instance>
 <instance part="U$40" gate="G$1" x="195.58" y="53.34" smashed="yes"/>
 <instance part="U$41" gate="G$1" x="35.56" y="106.68" smashed="yes"/>
-<instance part="L4O2" gate="G$1" x="224.79" y="101.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="101.6" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="100.33" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="L4O3" gate="G$1" x="224.79" y="99.06" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="99.06" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="97.79" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="L4O1" gate="G$1" x="224.79" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="96.52" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="95.25" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="L4O4" gate="G$1" x="224.79" y="104.14" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="104.14" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="102.87" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="L5O1" gate="G$1" x="224.79" y="93.98" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="93.98" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="92.71" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="L5O2" gate="G$1" x="224.79" y="91.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="91.44" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="90.17" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="L6O1" gate="G$1" x="224.79" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="88.9" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="87.63" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="SPY2" gate="G$1" x="224.79" y="86.36" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="86.36" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="85.09" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="SPY3" gate="G$1" x="224.79" y="83.82" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="83.82" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="82.55" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="SPY1" gate="G$1" x="224.79" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="81.28" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="80.01" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="SPYCOUT" gate="G$1" x="224.79" y="78.74" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="78.74" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="77.47" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="SPYSR" gate="G$1" x="224.79" y="73.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="73.66" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="72.39" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="SPYP" gate="G$1" x="224.79" y="71.12" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="71.12" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="223.52" y="69.85" size="1.778" layer="97" rot="R270"/>
-</instance>
 <instance part="CCTAIL" gate="G$1" x="165.1" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="163.83" y="74.93" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="166.37" y="74.93" size="1.778" layer="97" rot="R90"/>
@@ -8191,8 +8139,21 @@ month.</text>
 </instance>
 <instance part="U$74" gate="G$1" x="170.18" y="78.74" smashed="yes"/>
 <instance part="U$75" gate="G$1" x="170.18" y="71.12" smashed="yes"/>
-<instance part="U$77" gate="G$1" x="220.98" y="76.2" smashed="yes" rot="R180"/>
 <instance part="U$82" gate="G$1" x="170.18" y="76.2" smashed="yes"/>
+<instance part="U$77" gate="G$1" x="220.98" y="104.14" smashed="yes" rot="R180"/>
+<instance part="U$86" gate="G$1" x="220.98" y="101.6" smashed="yes" rot="R180"/>
+<instance part="U$87" gate="G$1" x="220.98" y="99.06" smashed="yes" rot="R180"/>
+<instance part="U$88" gate="G$1" x="220.98" y="96.52" smashed="yes" rot="R180"/>
+<instance part="U$89" gate="G$1" x="220.98" y="93.98" smashed="yes" rot="R180"/>
+<instance part="U$90" gate="G$1" x="221.615" y="91.44" smashed="yes" rot="R180"/>
+<instance part="U$91" gate="G$1" x="220.98" y="88.9" smashed="yes" rot="R180"/>
+<instance part="U$92" gate="G$1" x="220.98" y="86.36" smashed="yes" rot="R180"/>
+<instance part="U$94" gate="G$1" x="220.98" y="83.82" smashed="yes" rot="R180"/>
+<instance part="U$95" gate="G$1" x="220.98" y="81.28" smashed="yes" rot="R180"/>
+<instance part="U$96" gate="G$1" x="220.98" y="78.74" smashed="yes" rot="R180"/>
+<instance part="U$97" gate="G$1" x="220.98" y="76.2" smashed="yes" rot="R180"/>
+<instance part="U$98" gate="G$1" x="220.98" y="73.66" smashed="yes" rot="R180"/>
+<instance part="U$99" gate="G$1" x="220.98" y="71.12" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8744,97 +8705,6 @@ month.</text>
 <pinref part="CCTAIL" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="CC_SPYPAD_0"/>
-<pinref part="SPY2" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="86.36" x2="222.25" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="CC_SPYPAD_1"/>
-<pinref part="SPY3" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="83.82" x2="222.25" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="CC_SPYPAD_2"/>
-<pinref part="SPY1" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="81.28" x2="222.25" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="COUT_SPYPAD_0"/>
-<pinref part="SPYCOUT" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="78.74" x2="222.25" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="SHIFTREG_SPY_0"/>
-<pinref part="SPYSR" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="73.66" x2="222.25" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="PERF_SPYPAD_0"/>
-<pinref part="SPYP" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="71.12" x2="222.25" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT4_OUT_0"/>
-<pinref part="L4O4" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="104.14" x2="222.25" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT4_OUT_1"/>
-<pinref part="L4O2" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="101.6" x2="222.25" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT4_OUT_2"/>
-<pinref part="L4O3" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="99.06" x2="222.25" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT4_OUT_3"/>
-<pinref part="L4O1" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="96.52" x2="222.25" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT5_OUT_0"/>
-<pinref part="L5O1" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="93.98" x2="222.25" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT5_OUT_1"/>
-<pinref part="L5O2" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="91.44" x2="222.25" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="LUT6_OUT_0"/>
-<pinref part="L6O1" gate="G$1" pin="TP"/>
-<wire x1="218.44" y1="88.9" x2="222.25" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="1.8V" class="0">
 <segment>
 <pinref part="L3" gate="G$1" pin="1"/>
@@ -8911,16 +8781,88 @@ month.</text>
 <pinref part="U4" gate="G$1" pin="SC_TAIL"/>
 </segment>
 </net>
-<net name="N$71" class="0">
-<segment>
-<pinref part="U$77" gate="G$1" pin="P$1"/>
-<pinref part="U4" gate="G$1" pin="SC_SPYPAD_0"/>
-</segment>
-</net>
 <net name="N$74" class="0">
 <segment>
 <pinref part="U$82" gate="G$1" pin="P$1"/>
 <pinref part="U4" gate="G$1" pin="TEST_EN"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$77" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="LUT4_OUT_0"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$86" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="LUT4_OUT_1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$87" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="LUT4_OUT_2"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$88" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="LUT4_OUT_3"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$89" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="LUT5_OUT_0"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$91" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="LUT6_OUT_0"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$92" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="CC_SPYPAD_0"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$94" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="CC_SPYPAD_1"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$95" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="CC_SPYPAD_2"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$96" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="COUT_SPYPAD_0"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$97" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="SC_SPYPAD_0"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$98" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="SHIFTREG_SPY_0"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U$99" gate="G$1" pin="P$1"/>
+<pinref part="U4" gate="G$1" pin="PERF_SPYPAD_0"/>
 </segment>
 </net>
 </nets>

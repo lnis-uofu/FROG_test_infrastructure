@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1215,6 +1215,71 @@
 <smd name="CCFFHEAD" x="2.9" y="-5.1" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
 <smd name="GPIO6" x="1.4" y="-5.7" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
 </package>
+<package name="COB_INTEGRA">
+<circle x="-1.544" y="-1.49" radius="0.25" width="0" layer="21"/>
+<text x="0" y="11.365" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.365" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="-9.16" y1="9.16" x2="-9.16" y2="-9.16" width="0.1524" layer="21"/>
+<wire x1="-9.16" y1="-9.16" x2="9.16" y2="-9.16" width="0.1524" layer="21"/>
+<wire x1="9.16" y1="-9.16" x2="9.16" y2="9.16" width="0.1524" layer="21"/>
+<wire x1="9.16" y1="9.16" x2="-9.16" y2="9.16" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.4" layer="1"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.4" layer="1"/>
+<wire x1="2.1" y1="2.1" x2="2.1" y2="-2.1" width="0.4" layer="1"/>
+<wire x1="2.1" y1="-2.1" x2="-2.1" y2="-2.1" width="0.4" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.4" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.4" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.4" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.4" layer="51"/>
+<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.8" width="0.4" layer="1" curve="-75.749967"/>
+<wire x1="-2.8" y1="2.8" x2="2.8" y2="2.8" width="0.4" layer="1" curve="-75.749967"/>
+<wire x1="2.8" y1="2.8" x2="2.8" y2="-2.8" width="0.4" layer="1" curve="-75.749967"/>
+<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.4" layer="1" curve="-75.749967"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.4" layer="1" curve="-82.37185"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.4" layer="1" curve="-82.37185"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.4" layer="1" curve="-82.37185"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.4" layer="1" curve="-82.37185"/>
+<smd name="GND" x="-2.1" y="-0.1" dx="0.4064" dy="0.2032" layer="1"/>
+<smd name="VDD_CORE" x="-3.8" y="-0.1" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="VDD_IO" x="-4.8" y="-0.1" dx="0.3048" dy="0.1524" layer="1"/>
+<wire x1="-4" y1="-4.5" x2="-4.5" y2="4" width="0.4" layer="51" curve="-83.659808"/>
+<wire x1="-4.5" y1="4" x2="4" y2="4.5" width="0.4" layer="51" curve="-83.659808"/>
+<wire x1="4" y1="4.5" x2="4.5" y2="-4" width="0.4" layer="51" curve="-83.659808"/>
+<wire x1="4.5" y1="-4" x2="-4" y2="-4.5" width="0.4" layer="51" curve="-83.659808"/>
+<smd name="RESET" x="-4.9" y="-3.5" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="CLK" x="-5.1" y="-3.1" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO5" x="-5.3" y="-2.7" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO4" x="-5.5" y="-2.3" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO3" x="-5.6" y="-1.9" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO2" x="-5.7" y="-1.5" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO0" x="-5.9" y="-0.5" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO1" x="-5.8" y="-0.9" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO23" x="-1.5" y="5.7" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO22" x="-1.1" y="5.8" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO21" x="-0.6" y="5.9" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO20" x="-0.2" y="5.9" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO19" x="0.2" y="5.9" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO18" x="0.6" y="5.8" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO12" x="4.8" y="3.5" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO13" x="5" y="3.2" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO14" x="5.2" y="2.8" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO15" x="5.4" y="2.4" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO16" x="5.6" y="2" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO17" x="5.7" y="1.5" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="PROGCLK" x="5.8" y="1" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="PRESET" x="5.9" y="0.5" dx="0.3048" dy="0.1524" layer="1"/>
+<smd name="GPIO11" x="-0.6" y="-5.9" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO10" x="-0.2" y="-5.9" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO9" x="0.2" y="-5.9" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO8" x="0.7" y="-5.8" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO7" x="1.1" y="-5.8" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="CCFFHEAD" x="2.9" y="-5.1" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+<smd name="GPIO6" x="1.4" y="-5.7" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="BGA484C100P22X22_2400X2400X220N" urn="urn:adsk.eagle:package:21250859/1" type="model">
@@ -1627,6 +1692,45 @@
 <pin name="CCFF_HEAD" x="-5.08" y="20.32" length="middle"/>
 <pin name="SHIFTREG_SPY_0" x="40.64" y="12.7" length="middle" rot="R180"/>
 <pin name="SC_SPYPAD_0" x="40.64" y="15.24" length="middle" rot="R180"/>
+<pin name="PRESET" x="-5.08" y="35.56" length="middle"/>
+<pin name="GPIO12" x="40.64" y="78.74" length="middle" rot="R180"/>
+<pin name="GPIO16" x="40.64" y="68.58" length="middle" rot="R180"/>
+<pin name="GPIO15" x="40.64" y="71.12" length="middle" rot="R180"/>
+<pin name="GPIO14" x="40.64" y="73.66" length="middle" rot="R180"/>
+<pin name="GPIO13" x="40.64" y="76.2" length="middle" rot="R180"/>
+<pin name="PROG_CLK" x="-5.08" y="40.64" length="middle"/>
+<pin name="GPIO17" x="40.64" y="66.04" length="middle" rot="R180"/>
+<wire x1="0" y1="91.44" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="91.44" x2="0" y2="91.44" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="91.44" width="0.254" layer="94"/>
+</symbol>
+<symbol name="BGA352COB">
+<pin name="VDD" x="12.7" y="96.52" length="middle" rot="R270"/>
+<pin name="DVDD" x="22.86" y="96.52" length="middle" rot="R270"/>
+<pin name="GND" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="GPIO3" x="-5.08" y="71.12" length="middle"/>
+<pin name="GPIO0" x="-5.08" y="78.74" length="middle"/>
+<pin name="RESET" x="-5.08" y="38.1" length="middle"/>
+<pin name="CLK" x="-5.08" y="43.18" length="middle"/>
+<pin name="GPIO4" x="-5.08" y="68.58" length="middle"/>
+<pin name="GPIO5" x="-5.08" y="66.04" length="middle"/>
+<pin name="GPIO2" x="-5.08" y="73.66" length="middle"/>
+<pin name="GPIO1" x="-5.08" y="76.2" length="middle"/>
+<pin name="CCFF_TAIL" x="-5.08" y="12.7" length="middle"/>
+<pin name="GPIO23" x="40.64" y="50.8" length="middle" rot="R180"/>
+<pin name="GPIO11" x="-5.08" y="50.8" length="middle"/>
+<pin name="GPIO21" x="40.64" y="55.88" length="middle" rot="R180"/>
+<pin name="GPIO22" x="40.64" y="53.34" length="middle" rot="R180"/>
+<pin name="GPIO20" x="40.64" y="58.42" length="middle" rot="R180"/>
+<pin name="GPIO10" x="-5.08" y="53.34" length="middle"/>
+<pin name="GPIO8" x="-5.08" y="58.42" length="middle"/>
+<pin name="GPIO9" x="-5.08" y="55.88" length="middle"/>
+<pin name="GPIO18" x="40.64" y="63.5" length="middle" rot="R180"/>
+<pin name="GPIO19" x="40.64" y="60.96" length="middle" rot="R180"/>
+<pin name="GPIO6" x="-5.08" y="63.5" length="middle"/>
+<pin name="GPIO7" x="-5.08" y="60.96" length="middle"/>
+<pin name="CCFF_HEAD" x="-5.08" y="20.32" length="middle"/>
 <pin name="PRESET" x="-5.08" y="35.56" length="middle"/>
 <pin name="GPIO12" x="40.64" y="78.74" length="middle" rot="R180"/>
 <pin name="GPIO16" x="40.64" y="68.58" length="middle" rot="R180"/>
@@ -2072,6 +2176,18 @@
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:21250859/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FROG12NMCOB">
+<gates>
+<gate name="G$1" symbol="BGA352COB" x="-17.78" y="-40.64"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
