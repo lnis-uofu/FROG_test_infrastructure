@@ -1,12 +1,12 @@
-#TestBoard Software
+# TestBoard Software
 
-This folder contains the testboard test firmware. Test procedure tests are listed below.
+This folder contains the testboard test firmware. Vivavo is required to flash the testboard. Step by step guide on how to flash the firmware and run a few tests is provided below.
 
 ## Standard Chip Testing Procedure
 
-### Setup
+### HardWare Setup
 
-#### Logic Analyzer Setup
+#### Logic Analyzer Setup (Analog discovery 2 is being used here)
 - Put probes on the following pins on the PCB:
   - PROG_CLK
   - PRESET
