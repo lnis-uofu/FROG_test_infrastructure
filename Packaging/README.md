@@ -34,3 +34,7 @@ This folder contains all the required files by the Assembly house to realise the
 - Gerbers.
 
 - AssemblyHouseDocs is the PDF guideline of the assembly house.
+
+# BSP Packaging
+We employed the Open Source BaseJump UCSD_BGA_332 from the Bespoke Silicon Group (https://bsg.ai).
+This submodule redirect to their package repository where the package source files can be found.
