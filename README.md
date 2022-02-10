@@ -15,7 +15,7 @@ Development tools:
 
 # Directory description
 
- - ./Packaging: Package manufacturing & assembly files with documentation.
+ - ./Packaging: Package manufacturing & assembly files with documentation. We employed the Open Source BaseJump UCSD_BGA_332 from the Bespoke Silicon Group (https://bsg.ai).
  - ./Testboard: Contains design files for every board / component related to the POSHtestbed project. Also contains testfirmware that has been used to test FROG chip.
  - ./Demoboard: Design files for the 3 demoboard versions.
 
