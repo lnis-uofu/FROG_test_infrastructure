@@ -1,9 +1,8 @@
-The testboard hardware folder structure contains design and documentation files for the POSH project test bed.
-Baseboard for the Trenz Electronic UltraSOM+ MPSoC (TE0803) and an additional custom daughter board (TEBF0808) to connect a VLSI circuit to be tested.
+The testboard hardware folder contains design and documentation files for the POSH project test bed,
+baseboard for the Trenz Electronic UltraSOM+ MPSoC (TE0803) and an additional custom daughter board (TEBF0808) to connect a VLSI circuit to be tested.
 
 # Directory description
 
-Baseboard for the Trenz Electronic UltraSOM+ MPSoC (TE0803) and an additional custom daughter board (TEBF0808) to connect a VLSI circuit to be tested.
 - ./AP-TEBF0808-04: Baseboard design files for the POSHtestbed project.
 - ./Daughterboard: Custom board to connect FROG12_nm chip to the baseboard.
 - ./ULTRASoMCarier: Carier card for above listed boards.
